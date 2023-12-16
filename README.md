@@ -1,5 +1,6 @@
 # dataportal
 Empty repository for future native token data portal. All content will be open source.
+![Imgur](https://i.imgur.com/RWohrGX.jpg)
 
 ## Useful resources:
 ### Data cleaning
