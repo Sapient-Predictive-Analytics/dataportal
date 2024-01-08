@@ -1,5 +1,7 @@
 # dataportal
-Empty repository for future native token data portal. All content will be open source.
+Placeholder repository for future native token data portal. All content will be open source.
+Fungible Tokens under consideration (Top-50): **AGIX**, **C3**, C4, CBLP, CHRY, CLAY, CNCT, COPI, CSWAP, DING, DISCO, **EMP**, ENCS, FACT, **GENS**, GENSX, GOKEY, **HOSKY**, **HUNT**, **IAG**, **INDY**, **JPG**, KOPI, **LENFI**, LIFI, **LQ**, **MAYZ**, MELD, **MILK**, **MIN**, MNT, **NEWM**, **NMKR**, NTX, OPT, **OPTIM**, PAVIA, REVU, RJV, **SHEN**, **SNEK**, **SOC**, **SUNDAE**, **VYFI**, **WMT**, **WRT**, YUMMI
+
 ![Imgur](https://i.imgur.com/RWohrGX.jpg)
 
 ## Useful resources:
