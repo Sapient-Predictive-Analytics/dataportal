@@ -4,7 +4,7 @@ Fungible Tokens under consideration (Top-50): **AGIX**, **C3**, C4, CBLP, CHRY, 
 
 ![Imgur](https://i.imgur.com/RWohrGX.jpg)
 
-![Imgur](https://imgur.com/a/kIC2LxU)
+![Imgur](https://i.imgur.com/lpL24Tz.jpg)
 
 ## Useful resources:
 ### Data cleaning
