@@ -6,7 +6,7 @@ To pick the first ten tokens to showcase and provide data for has not been easy.
 1) Rank top 40 fully diluted market cap according to pool.pm and score first 40 points and 40th 1 point.
 2) Rank top 40 by float / tokens available for trade and score first 40 points and 40th 1 point.
 3) Rank top 40 by trading volume on Minswap on two separate 24 hour periods in March and April 2024 (5th and 10th respectively) and score first 40 points and 40th 1 point for a maximum of 80 points.
-4) Eliminate tokens with less than 1 year trading history. Although some very interesting projects like AXO and FLDT are excluded this way, it limits the suitability for backtesting and we will add these tokens in the future with sufficient trading history.
+4) Eliminate tokens with less than 1 year trading history. Although some very interesting projects like BOOK, AXO, HUNT and FLDT are excluded this way, it limits the suitability for backtesting and we will add these tokens in the future with sufficient trading history.
 5) We added two “bonus tokens” for a total of 12 to include Genius Yield (ticker:GENS) who have helped us a lot, and NEWM (ticker:NEWM) which was considered one of the top native tokens to be listed on Norwegian Block Exchange [NBX](https://cardano.ideascale.com/c/idea/112966) but did otherwise not make the cut in terms of market capitalization. We may voluntarily add more tokens that show certain merit or support us during this project.
 
 The aggregate score and our winners are:
@@ -23,13 +23,13 @@ The aggregate score and our winners are:
 
 #6 **MIN**	135/160 points
 
-#7 **BOOK**	131/160 points
+#7 **LENFI**	130/160 points
 
-#8 **LENFI**	130/160 points
+#8 **NTX**	121/160 points
 
-#9 **NTX**	121/160 points
+#9 **INDY**	120/160 points
 
-#10 **INDY**	120/160 points
+#10 **MELD** 120/160 points 
 
 #11 **NMKR**	79/160 points (chosen voluntarily on merit)
 
