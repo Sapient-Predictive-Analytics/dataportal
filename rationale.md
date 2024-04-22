@@ -36,20 +36,3 @@ The aggregate score and our winners are:
 #12 **GENS**	67/160 points (chosen voluntarily on merit)
 
 We picked World Mobile Token, ranked #2, as the first actively traded token to publish a case study and data for. Unlike AGIX, its Token Paper is clear about the commitment to its Cardano native token as the main and currently only token standard.
-
-
-**|    Ticker     |     Supply    | Price 23/4/15 | Price 22/4/15 | 1-year-change | USD Market Cap|**
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| **AGIX**  | 262,027,722 | 0.9642 | 1.8222  | 88.99%  | 238,733,458  |
-| **WMT**  | 2,000,000,000 | 0.4077 | 0.6488 | 59.14%  | 648,800,000 |
-| **IAG** | 1,000,000,000  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| **LENFI** | 29,500,000 | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| **MIN**  | 3,000,000,000 | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| **INDY**  | 35,000,000 | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| **NEWM**  |9,735,033,900| Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| **SNEK** | 7.57E+10  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| **COPI**  | 413,550,421| Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| **GENS** | 100,000,000  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| **MELD**  | 4,000,000,000 | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| **NTX**  | 1,000,000,000 | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
