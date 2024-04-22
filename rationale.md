@@ -35,4 +35,4 @@ The aggregate score and our winners are:
 
 #12 **GENS**	67/160 points (chosen voluntarily on merit)
 
-We picked World Mobile Token, ranked #2, as the first actively traded token to publish a case study and data for during the development stages of this project as unlike AGIX its Token Paper is clear about the commitment to its Cardano native token as the main and currently only token standard.
+We picked World Mobile Token, ranked #2, as the first actively traded token to publish a case study and data for. Unlike AGIX, its Token Paper is clear about the commitment to its Cardano native token as the main and currently only token standard.
