@@ -1,6 +1,6 @@
 # dataportal
 Public repository for Sapient's Cardano Native Tokens data portal.
-Fungible Tokens at launch: **AGIX**, **BOOK**, **COPI**, **GENS**, **IAG**, **INDY**, **LENFI**, **MIN**, **NEWM**, **NTX**, **SNEK**, **WMT**
+Fungible Tokens at launch: **AGIX**, **COPI**, **GENS**, **IAG**, **INDY**, **LENFI**, **MELD**, **MIN**, **NEWM**, **NTX**, **SNEK**, **WMT**
 
 ![Imgur](https://i.imgur.com/RWohrGX.jpg)
 
