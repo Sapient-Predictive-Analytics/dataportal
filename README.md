@@ -6,6 +6,11 @@ Fungible Tokens at launch: **AGIX**, **COPI**, **GENS**, **IAG**, **INDY**, **LE
 
 ![Imgur](https://i.imgur.com/lpL24Tz.jpg)
 
+## Casestudy Milestone 1
+Simple data manipulation on clean WMT (Minswap) data
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Sapient-Predictive-Analytics/dataportal/main?labpath=%2Fcasestudy)
+
 ## Useful resources:
 ### Data cleaning
 * https://docs.cleanlab.ai/stable/index.html
