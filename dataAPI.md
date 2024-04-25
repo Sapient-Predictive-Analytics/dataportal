@@ -1,3 +1,3 @@
 # API Infrastructure Considerations
 
-[Imgur](https://i.imgur.com/vVfon0W.jpeg)
+![Imgur](https://i.imgur.com/vVfon0W.jpeg)
