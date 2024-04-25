@@ -4,7 +4,8 @@ Fungible Tokens at launch: **AGIX**, **COPI**, **GENS**, **IAG**, **INDY**, **LE
 
 ![Imgur](https://i.imgur.com/CVGhVIS.jpg)
 
-![Imgur](https://imgur.com/LGIM1X2)
+
+[Imgur](https://imgur.com/LGIM1X2)
 
 ## Casestudy Milestone 1
 Simple data manipulation on clean WMT (Minswap) data
