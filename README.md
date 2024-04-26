@@ -33,6 +33,7 @@ Simple data manipulation on clean WMT (Minswap) data
 * https://github.com/CharlieShelbourne/data-manipulation
 ### Data manipulation
 * https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
+* https://github.com/yhilpisch/py4fi2nd
 ### Backtesting
 * https://zipline-trader.readthedocs.io/en/latest/
 * https://zipline.ml4trading.io/
