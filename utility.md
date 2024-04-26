@@ -6,4 +6,4 @@ Most books on DIY quantitative trading and automation of trading strategies toda
 
 The first chapters of IPython notebook examples and trading strategies is unlikely to result profitable results in real life, but meant to show how data data is imported and used. There are many pitfalls in automated or machine trading strategies, and careful choice of timeframes, order book consideration, fees, slippage, and for Cardano native tokens reliability of DEXes to execute swaps or limit orders and availability of desired trading volumes are all critical to success. These asspects will be added with more tokens being listed and the site growing over the course of the project. We hope to receive feedback early on and are keen to steer the direction according to user demand and responsive to ecosystem trends and best practices.
 
-https://i.imgur.com/Jy0djnR.jpeg
+![Imgur](https://i.imgur.com/Jy0djnR.jpeg)
