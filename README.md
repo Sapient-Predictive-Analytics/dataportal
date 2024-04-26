@@ -39,8 +39,8 @@ Simple data manipulation on clean WMT (Minswap) data
 * https://kernc.github.io/backtesting.py/
 * https://pypi.org/project/Backtesting/
 ### Trading bots etc.
-https://www.geniusyield.co/marketmakerbot?lng=en
-https://www.axo.trade/programmable-swaps
+* https://www.geniusyield.co/marketmakerbot?lng=en
+* https://www.axo.trade/programmable-swaps
 ### Market coverage
 * https://defillama.com/chain/Cardano
 * https://www.taptools.io/openapi/subscription?currency=ADA
