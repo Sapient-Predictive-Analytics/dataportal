@@ -19,7 +19,6 @@ Simple data manipulation on clean WMT (Minswap) data
 
 [Download folder for interactive notebook](https://github.com/Sapient-Predictive-Analytics/dataportal/tree/main/casestudy)
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Sapient-Predictive-Analytics/dataportal/main?labpath=%2Fcasestudy)
 
 ***
 ## How to use this repository and project
