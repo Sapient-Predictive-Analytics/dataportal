@@ -43,6 +43,7 @@ https://www.geniusyield.co/marketmakerbot?lng=en
 https://www.axo.trade/programmable-swaps
 ### Market coverage
 * https://defillama.com/chain/Cardano
+* https://www.taptools.io/openapi/subscription?currency=ADA
 * https://api-mainnet-prod.minswap.org
 * https://github.com/SundaeSwap-finance/sundae-sdk
 * https://docs.muesliswap.com/cardano/muesli-api/api-v1
