@@ -1,5 +1,7 @@
 # iPython Notebook WMT_Casestudy overview
 
+The easiest way to use this iPython notebook is to download the folder and open it with your own Anaconda jupyter notebook app as done in the video walkthrough. You can see the static content in the WMT_Casestudy.ipynb file directly in Github as well. We may add the binder link back that we have removed for the time being for performance issues. It is of course also posssible to run ipython from the command line if you have all the packages installed and clone the code in your terminal. Either way you choose, this gives an initial overview of how easy it is to play around with native token data similar to any other stock or crypto time series and showcases the advantages of Python for data manipulation and plotting if you are not very familiar with it yet. In the Utility section of this repository there is a markdown file with recommended packages and reading.
+
 ### First Code Block
 Introduces Pandas read_csv which will be the main utility prior to API integration
 Currently plotting a custom 14 day moving average and token prices on Minswap
