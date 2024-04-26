@@ -24,30 +24,3 @@ Simple data manipulation on clean WMT (Minswap) data
 ***
 ## How to use this repository and project
 [![Video walkthrough](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
-
-## Useful resources:
-### Data cleaning
-* https://docs.cleanlab.ai/stable/index.html
-* https://pyjanitor-devs.github.io/pyjanitor/ 
-### Refactoring
-* https://github.com/CharlieShelbourne/data-manipulation
-### Data manipulation
-* https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
-* https://github.com/yhilpisch/py4fi2nd
-### Backtesting
-* https://zipline-trader.readthedocs.io/en/latest/
-* https://zipline.ml4trading.io/
-* https://kernc.github.io/backtesting.py/
-* https://pypi.org/project/Backtesting/
-### Trading bots etc.
-* https://www.geniusyield.co/marketmakerbot?lng=en
-* https://www.axo.trade/programmable-swaps
-### Market coverage
-* https://defillama.com/chain/Cardano
-* https://www.taptools.io/openapi/subscription?currency=ADA
-* https://api-mainnet-prod.minswap.org
-* https://github.com/SundaeSwap-finance/sundae-sdk
-* https://docs.muesliswap.com/cardano/muesli-api/api-v1
-### Complexity/Prediction
-* https://docs.nixtla.io/
-* https://python.langchain.com/docs/templates/extraction-openai-functions
