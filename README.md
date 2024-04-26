@@ -23,4 +23,5 @@ Simple data manipulation on clean WMT (Minswap) data
 
 ***
 ## How to use this repository and project
-[![Video walkthrough](https://i.imgur.com/NiU8xcT.png)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+
+[![Video walkthrough](<img src="https://i.imgur.com/NiU8xcT.png)" width="100" height="70" />](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
