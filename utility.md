@@ -8,6 +8,14 @@ The first chapters of IPython notebook examples and trading strategies is unlike
 
 ![Imgur](https://i.imgur.com/Jy0djnR.jpeg)
 
+## Getting Zipline
+Installing Zipline as our main Backtesting package on Anaconda (root -> Terminal):
+`conda create -n zip38 python=3.8`
+`activate zip38`
+`conda install -c conda-forge zipline-reloaded`
+
+<blockquote class="imgur-embed-pub" lang="en" data-id="DDetr8I" data-context="false" ><a href="//imgur.com/DDetr8I"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
 ## Useful resources:
 ### Data cleaning
 * https://docs.cleanlab.ai/stable/index.html
