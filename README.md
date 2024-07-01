@@ -1,6 +1,6 @@
 # dataportal
 Public repository for Sapient's Cardano Native Tokens data portal.
-Fungible Tokens at launch: **AGIX**, **COPI**, **GENS**, **IAG**, **INDY**, **LENFI**, **MELD**, **MIN**, **NEWM**, **NTX**, **SNEK**, **WMT**
+Fungible Tokens at launch: **AGIX**, **COPI**, **IAG**, **INDY**, **LENFI**, **MELD**, **MIN**, **NEWM**, **NMKR**, **NTX**, **SNEK**, **WMT**
 
 ![Imgur](https://i.imgur.com/CVGhVIS.jpg)
 Time series for WMT token since first DEX listing can be used to experiment with simple trading strategies like moving average crossover, increase in trading volume or volatility divergence to ADA.
