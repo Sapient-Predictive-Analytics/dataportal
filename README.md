@@ -23,7 +23,7 @@ Simple data manipulation on clean WMT (Minswap) data
 ***
 ## How to use this repository and project
 
-[(<img src="https://i.imgur.com/NiU8xcT.png)" width="200" height="140" />](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+[<img src="https://i.imgur.com/NiU8xcT.png" width="200" height="140" />](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
 
 ***
 ## Backtesting and Heatmap Tool Milestone 2
