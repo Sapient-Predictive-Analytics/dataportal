@@ -50,12 +50,13 @@ Once you have Anaconda or Miniconda installed, you can proceed with installing Z
    conda activate zipline-env
 
 2. **The Zipline-Reloaded distribution**:
-   Since the discontinuation of the Quantopian project and sponsorship of Zipline, the library is entirely open source and community maintained. Our current flavor of choice is the [Zipline-Reloaded](https://github.com/stefan-jansen/zipline-reloaded) of ML4T.
- ```bash
+   Since the discontinuation of the Quantopian project and sponsorship of Zipline, the library is entirely open source and community maintained. Our current flavor of
+   choice is the [Zipline-Reloaded](https://github.com/stefan-jansen/zipline-reloaded) of ML4T.
+   ```bash
    conda install -c ml4t conda-forge -c ranaroussi zipline-reloaded
 
 3. **Creating Python files that leverage Zipline-Reloaded**:
- ```Python
+   ```Python
    # Import of needed common data analysis libraries
    import os
    import numpy as np
@@ -68,6 +69,7 @@ Once you have Anaconda or Miniconda installed, you can proceed with installing Z
 
    print(os.getcwd())
    # Run the backtest code
+
 
 ## Conclusion
 Backtesting is a powerful tool that can significantly improve your trading and investment strategies. By simulating trades on historical data, you can identify strengths and weaknesses in your approach, manage risk more effectively, and optimize performance. Whether you are a day trader or a long-term investor, backtesting provides valuable insights that can enhance your decision-making process.
