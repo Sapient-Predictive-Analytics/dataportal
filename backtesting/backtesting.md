@@ -2,7 +2,7 @@
 
 Backtesting is a crucial step in developing and validating trading strategies. It allows traders and investors to simulate how their strategies would have performed in the past using historical data. This process helps in identifying potential flaws and strengths in the strategy before risking real money. With the rise of algorithmic trading, backtesting has become indispensable for traders who want to ensure their strategies are robust and profitable.
 
-In this guide, we will explore the fundamentals of backtesting, particularly focusing on using the Python Zipline library. Although our primary interest is in investing in Cardano native tokens, decentralized exchange (DEX) projects, and decentralized application (Dapp) projects listed in ADA, the principles discussed here apply to any tradable asset.
+In this guide, we will explore the fundamentals of backtesting, particularly focusing on using the Python Zipline library. Although our primary interest is in investing in Cardano native tokens, the principles discussed here apply to any tradable asset and can be tested in more liquid markets like ADA/USD where an investment edge is less likely but more data and much lower cost of trading and slippage exist to validate our setup and tools.
 
 ## Why Bother with Backtesting Trading Strategies?
 
