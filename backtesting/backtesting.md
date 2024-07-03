@@ -4,7 +4,11 @@ Backtesting is a crucial step in developing and validating trading strategies. I
 
 In this guide, we will explore the fundamentals of backtesting, particularly focusing on using the Python Zipline library. Although our primary interest is in investing in Cardano native tokens, the principles discussed here apply to any tradable asset and can be tested in more liquid markets like ADA/USD where an investment edge is less likely but more data and much lower cost of trading and slippage exist to validate our setup and tools.
 
-## Why Bother with Backtesting Trading Strategies?
+Getting started with Zipline for backtesting can be challenging due to its dependencies and outdated or community maintained documentation. We try to cover several options and local environment and container usage to provide an easy to follow step-by-step guide to set up Zipline and run a simple backtest using our own native token [CSV timeseries](https://github.com/Sapient-Predictive-Analytics/dataportal/tree/main/tokens) data.
+
+Let's start with the most obvious question.
+
+## Why Bother with Backtesting Trading Strategies in the first place?
 
 Backtesting offers several benefits that make it an essential practice for both novice and experienced traders:
 
@@ -24,9 +28,18 @@ Backtesting is not just for day traders. Long-term investors can also reap signi
 
 ## Setting Up Your Environment
 
+### Set up a virtual environment: 
+First, create a new directory for your project and set up a virtual environment:
+```bash
+   mkdir zipline_project
+   cd zipline_project
+   python -m venv venv
+   source venv/bin/activate  # On Windows, use: venv\Scripts\activate
+```
+
 ### Using Anaconda or Miniconda
 
-To begin backtesting with Python and Zipline, you need to set up your Python environment. Anaconda and Miniconda are popular choices for managing Python environments due to their ease of use and robust package management.
+To begin backtesting with Python and Zipline, we need to set up a Python environment. Anaconda and Miniconda are popular choices for managing Python environments due to their ease of use and robust package management.
 
 #### Installing Anaconda
 
