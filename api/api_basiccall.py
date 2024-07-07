@@ -19,7 +19,13 @@ ns = api.namespace('data', description='Time series operations')
 # Sample time series data
 modpath = os.path.dirname(os.path.abspath(sys.argv[0])) 
 datapath = os.path.join(modpath, '../../dataportal/tokens/SNEK.csv') 
-time_series_data = pd.read_csv(datapath)
+# Read CSV file into a DataFrame
+time_series_data = pd.read_csv('data.csv')
+time_series_data.set_index('date', inplace=True)
+
+date_model = api.model('DateModel', {
+    'date': fields.String(required=True, description='The date'),
+})
 
 @ns.route('/')
 class DataResource(Resource):
