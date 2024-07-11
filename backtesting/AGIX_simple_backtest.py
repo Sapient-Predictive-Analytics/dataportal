@@ -110,17 +110,17 @@ fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(12, 10), gridspec_kw={'height_rati
 
 # Top subplot: AGIX price and SMA
 ax1.plot(df.index, df['close'], label='Close Price')
-ax1.plot(df.index, df['sma'], label='SMA')
+ax1.plot(df.index, df['sma'], label='SMA20')
 ax1.set_title('AGIX Price and Trading Signal')
 ax1.set_ylabel('Price')
 ax1.grid(True)
 ax1.legend()
 
 # Bottom subplot: Account value, trades, and profit/loss
-ax2.plot(df.index, df['portfolio_value'], label='Account Value', color='blue')
-ax2.plot(df.index, df['pnl'], label='Profit/Loss', color='green')
+ax2.plot(df.index, df['portfolio_value'], label='Profit and Loss', color='blue')
+#ax2.plot(df.index, df['pnl'], label='Profit/Loss', color='green')
 ax2.set_title('Account Performance')
-ax2.set_ylabel('Value ($)')
+ax2.set_ylabel('Percent%')
 ax2.grid(True)
 ax2.legend(loc='upper left')
 
