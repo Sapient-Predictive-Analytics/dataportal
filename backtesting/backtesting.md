@@ -1,10 +1,10 @@
-# Introduction to Backtesting Trading Strategies with Python open source library Zipline
+# Introduction to Backtesting Trading Strategies with Python open source libraries Backtrader and Zipline
 
 Backtesting is a crucial step in developing and validating trading strategies. It allows traders and investors to simulate how their strategies would have performed in the past using historical data. This process helps in identifying potential flaws and strengths in the strategy before risking real money. With the rise of algorithmic trading, backtesting has become indispensable for traders who want to ensure their strategies are robust and profitable.
 
-In this guide, we will explore the fundamentals of backtesting, particularly focusing on using the Python Zipline library. Although our primary interest is in investing in Cardano native tokens, the principles discussed here apply to any tradable asset and can be tested in more liquid markets like ADA/USD where an investment edge is less likely but more data and much lower cost of trading and slippage exist to validate our setup and tools.
+In this guide, we will explore the fundamentals of backtesting, particularly focusing on using Backtrader and Zipline. Although our primary interest is in investing in Cardano native tokens, the principles discussed here apply to any tradable asset and can be tested in more liquid markets like ADA/USD where an investment edge is less likely but more data and much lower cost of trading and slippage exist to validate our setup and tools. Following from our [casestudy](https://github.com/Sapient-Predictive-Analytics/dataportal/tree/main/casestudy) we use World Mobile Token WMT data where possible.
 
-Getting started with Zipline for backtesting can be challenging due to its dependencies and outdated or community maintained documentation. We try to cover several options and local environment and container usage to provide an easy to follow step-by-step guide to set up Zipline and run a simple backtest using our own native token [CSV timeseries](https://github.com/Sapient-Predictive-Analytics/dataportal/tree/main/tokens) data.
+Getting started is easiest with Backtrader which is the simpler of the two libraries and because it started out as an open source project, is less dependent on external support or APIs. Backtesting can be challenging due to its dependencies and outdated or community maintained documentation, as the investment community has an obvious interest to not level the playing field. We try to cover several options and local environment and container usage to provide an easy to follow step-by-step guide to set up and run a simple backtest using our own native token [CSV timeseries](https://github.com/Sapient-Predictive-Analytics/dataportal/tree/main/tokens) data.
 
 Let's start with the most obvious question.
 
@@ -26,65 +26,59 @@ Backtesting is not just for day traders. Long-term investors can also reap signi
 - **Swing Traders**: Swing traders can use backtesting to develop strategies that capitalize on medium-term price movements, optimizing trade timing and risk management.
 - **Long-Term Investors**: Long-term investors can backtest strategies that involve holding assets for extended periods. This helps in understanding the potential long-term performance and risk of the strategy.
 
-## Setting Up Your Environment
+## Setting Up the Environment
 
 ### Set up a virtual environment: 
 First, create a new directory for your project and set up a virtual environment:
 ```bash
-   mkdir zipline_project
-   cd zipline_project
+   mkdir backtest_project
+   cd backtest_project
    python -m venv venv
    source venv/bin/activate  # On Windows, use: venv\Scripts\activate
 ```
 
 ### Using Anaconda or Miniconda
 
-To begin backtesting with Python and Zipline, we need to set up a Python environment. Anaconda and Miniconda are popular choices for managing Python environments due to their ease of use and robust package management.
+To begin backtesting with Python and Backtrader, we need to set up a Python environment. Anaconda and Miniconda are popular choices for managing Python environments due to their ease of use and robust package management. Backtrader is currently not available on Anaconda natively, but we can add it through pip.
 
-#### Installing Anaconda
+### Installing Anaconda
 
 1. **Download Anaconda**: Visit the [Anaconda website](https://www.anaconda.com/products/distribution) and download the installer for your operating system.
 2. **Install Anaconda**: Follow the installation instructions provided on the website. This process will install Anaconda Navigator, a graphical interface for managing your Python environments and packages.
 
-#### Installing Miniconda
+### Installing Miniconda
 
 Miniconda is a lightweight alternative to Anaconda that includes only the conda package manager and Python. It is ideal for users who prefer a minimal installation.
 
 1. **Download Miniconda**: Visit the [Miniconda website](https://docs.conda.io/en/latest/miniconda.html) and download the installer for your operating system.
 2. **Install Miniconda**: Follow the installation instructions provided on the website.
 
-### Setting Up Zipline
+### Setting Up Backtrader
 
-Once you have Anaconda or Miniconda installed, you can proceed with installing Zipline. Zipline is an open-source backtesting library that integrates seamlessly with the PyData stack, including libraries like pandas and numpy.
+**Activate base environment**
 
-1. **Create a New Conda Environment**:
-   ```bash
-   conda create -n zipline-env python=3.8
-   conda activate zipline-env
+```
+conda activate base
+```
 
-2. **The Zipline-Reloaded distribution**:
-   Since the discontinuation of the Quantopian project and sponsorship of Zipline, the library is entirely open source and community maintained. Our current flavor of
-   choice is the [Zipline-Reloaded](https://github.com/stefan-jansen/zipline-reloaded) of ML4T.
-   ```bash
-   conda install -c ml4t conda-forge -c ranaroussi zipline-reloaded
+Install Backtrader using pip
+```
+pip install backtrader
+```
 
-3. **Creating Python files that leverage Zipline-Reloaded**:
-   ```Python
-   # Import of needed common data analysis libraries
-   import os
-   import numpy as np
-   import pandas as pd
-   import seaborn
+Verify installation
+```
+python -c "import backtrader; print(backtrader.__version__)"
+```
 
-   # Import all needed Zipline functions
-   from zipline import run_algorithm
-   from zipline.api import order_target_percent, symbol
+## How Backtrader works under the hood
+Backtrader is an entirely open source, community run project that has great documentation. You can refer to its [homepage](https://www.backtrader.com/docu/) or [Github](https://github.com/backtrader/backtrader).
 
-   print(os.getcwd())
-   # Run the backtest code
+It leverages Python's object oriented programming and creates a "Cerebro" (Spanish for brain) class that has backtesting functionalities as its methods.
 
+![Cerebro infrastructure](https://drive.google.com/file/d/1o-1PSjmQF_XQp9_66UG4Yy4TYqKgDHnS/view?usp=sharing)
 
 ## Conclusion
-Backtesting is a powerful tool that can significantly improve your trading and investment strategies. By simulating trades on historical data, you can identify strengths and weaknesses in your approach, manage risk more effectively, and optimize performance. Whether you are a day trader or a long-term investor, backtesting provides valuable insights that can enhance your decision-making process.
+Backtesting is a powerful tool that can significantly improve trading and investment strategies. By simulating trades on historical data, you can identify strengths and weaknesses in your approach, manage risk more effectively, and optimize performance. Whether you are a day trader or a long-term investor, backtesting provides valuable insights that can enhance your decision-making process.
 
 Using Python's Zipline library, you can easily implement and test your strategies. With the proper setup through Anaconda or Miniconda, you will have a robust environment to develop and refine your trading algorithms.
