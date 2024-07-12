@@ -322,6 +322,51 @@ When plotting, this shows a surprise: our "highly profitable" strategy no longer
 
 This is caused by the [*path dependence*](https://wilmott.com/path-dependence-and-volatility/) problem of Backtesting: as the first few signals are loss-making, our portfolio runs down so much that the almost 3x profit from the 2024 rally in WMT is enjoyed by a much diminished account. Had we limited our input data to the last 1 year or only have access to that much data, the strategy would look great again. The point is therefore not so much to find a "great" strategy that makes the most out of the simulated ADA account, but by having the most reliable expected profit. We will deal with this in much more detail later.
 
+## Tracking Trades and Account Performance
+Next, we add a logging method to our Cerebro class and tabulate results using the [Tabulate](https://pypi.org/project/tabulate/) library. This is crucial to later compare and evaluate strategies quantitatively as the human eye glancing over plots only yields a certain amount of intuitive assessment.
+
+~~~
+def log_trade(self, order_type, value, size):
+        self.trade_log.append({
+            'date': self.data.datetime.date(0),
+            'type': order_type,
+            'price': self.data.close[0],
+            'size': size,
+            'portfolio_value': value,
+            'position': self.position.size if self.position else 0
+        })
+~~~
+
+And we then log and tabulate.
+
+~~~
+from tabulate import tabulate
+
+# Print trade log
+print("\nDetailed Trade Log:")
+for trade in strategy.trade_log:
+    print(f"Date: {trade['date']}, Type: {trade['type']}, Price: ${trade['price']:.2f}, "
+          f"Size: {trade['size']}, Portfolio Value: ${trade['portfolio_value']:.2f}, "
+          f"Position: {trade['position']}")
+
+# Create and print summary table
+print("\nTrade Summary Table:")
+table_data = [
+    [trade['date'], trade['type'], f"${trade['price']:.2f}", trade['size'],
+     f"${trade['portfolio_value']:.2f}", trade['position']]
+    for trade in strategy.trade_log
+]
+headers = ["Date", "Type", "Price", "Size", "Portfolio Value", "Position"]
+print(tabulate(table_data, headers=headers, tablefmt="grid"))
+
+# Print final results
+final_value = df['portfolio_value'].iloc[-1]
+total_pnl = df['pnl'].iloc[-1]
+print(f'\nFinal Portfolio Value: ${final_value:.2f}')
+print(f'Total Profit/Loss: ${total_pnl:.2f}')
+print(f'Total Return: {(final_value - initial_cash) / initial_cash:.2%}')
+~~~
+
 ## More sophisticated Trading Strategies: Candlesticks example
 
 ## Conclusion
