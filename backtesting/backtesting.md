@@ -84,7 +84,7 @@ coordinates the overall process from collecting inputs, executing the backtest b
 
 ## Getting coding
 
-Let's build the program from scratch, step by step with a really simple strategy: the 20 day moving average. When the price of WMT token is above, we hold a position, and if it is below, we don't. Initially, we only hold 1 AGIX, so our 100,000 account will not feel much impact no matter how well the strategy performs. Later, we refine this by buying the maximum amount of tokens so the account reflects the success or failure of our strategy.
+Let's build the program from scratch, step by step with a really simple strategy: the 20 day moving average. When the price of WMT token is above, we hold a position, and if it is below, we don't. Initially, we only hold 1 WMT, so our 100,000 account will not feel much impact no matter how well the strategy performs. Later, we refine this by buying the maximum amount of tokens so the account reflects the success or failure of our strategy.
 
 ~~~
 import backtrader as bt
