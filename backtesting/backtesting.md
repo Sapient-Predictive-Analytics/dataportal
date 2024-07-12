@@ -76,7 +76,7 @@ Backtrader is an entirely open source, community run project that has great docu
 
 It leverages Python's object oriented programming and creates a "Cerebro" (Spanish for brain) class that has backtesting functionalities as its methods.
 
-![Cerebro infrastructure](https://drive.google.com/file/d/1o-1PSjmQF_XQp9_66UG4Yy4TYqKgDHnS/view?usp=sharing)
+![Cerebro infrastructure](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/backtesting/cerebro.jpg)
 
 ## Conclusion
 Backtesting is a powerful tool that can significantly improve trading and investment strategies. By simulating trades on historical data, you can identify strengths and weaknesses in your approach, manage risk more effectively, and optimize performance. Whether you are a day trader or a long-term investor, backtesting provides valuable insights that can enhance your decision-making process.
