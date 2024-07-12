@@ -230,7 +230,65 @@ print(f'Total Return: {(final_value - initial_cash) / initial_cash:.2%}')
 
 ## Adding Plotting
 Now we add Matplotlib and plot the results.
+New code:
+~~~
+import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
+from tabulate import tabulate
+~~~
+
+These are the imports.
+
+~~~
+# Create plots
+fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(12, 10), gridspec_kw={'height_ratios': [2, 1]}, sharex=True)
+
+# Top subplot: AGIX price and SMA
+ax1.plot(df.index, df['close'], label='Close Price')
+ax1.plot(df.index, df['sma'], label='SMA')
+ax1.set_title('AGIX Price and Trading Signal')
+ax1.set_ylabel('Price')
+ax1.grid(True)
+ax1.legend()
+
+# Bottom subplot: Account value, trades, and profit/loss
+ax2.plot(df.index, df['portfolio_value'], label='Account Value', color='blue')
+ax2.plot(df.index, df['pnl'], label='Profit/Loss', color='green')
+ax2.set_title('Account Performance')
+ax2.set_ylabel('Value ($)')
+ax2.grid(True)
+ax2.legend(loc='upper left')
+
+# Add buy/sell markers to both subplots
+for ax in [ax1, ax2]:
+    if not buys.empty:
+        ax.scatter(buys['date'], buys['price'], marker='^', color='g', s=100, label='Buy')
+    if not sells.empty:
+        ax.scatter(sells['date'], sells['price'], marker='v', color='r', s=100, label='Sell')
+
+# Adjust y-axis limits for the bottom subplot
+portfolio_min = df['portfolio_value'].min()
+portfolio_max = df['portfolio_value'].max()
+y_range = portfolio_max - portfolio_min
+y_padding = y_range * 0.1  # Add 10% padding
+ax2.set_ylim(portfolio_min - y_padding, portfolio_max + y_padding)
+
+# Add horizontal line for initial cash in bottom subplot
+ax2.axhline(y=initial_cash, color='r', linestyle='--', label='Initial Cash')
+
+# Format x-axis
+plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))
+plt.gcf().autofmt_xdate()  # Rotation
+
+# Adjust layout and display the plot
+plt.tight_layout()
+plt.show()
+~~~
+
+And voila, with this we can visualize whether the strategy has potential, as it shows more than just the final Profit and Loss and provides lots of clues if the variability of results, drawdown, number of trading signals and so on show promise for further refinement or we better move on and ideate on new rules for entry and exit.
+
 ![Backtest Result](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/backtesting/AGIX_simple_backtest.png)
+
 
 ## More sophisticated Trading Strategies: Candlesticks example
 
