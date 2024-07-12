@@ -82,7 +82,7 @@ It leverages Python's object oriented programming and creates a "Cerebro" (Spani
 The key components of any backtesting workflow is represented as Python objects. These objects interact with one another to facilitate processing input data and trading logic computation.  We can incorporate market factors, formulate and execute a strategy, receive and execute orders, and track and measure performance. A Cerebro instance
 coordinates the overall process from collecting inputs, executing the backtest bar by bar, and providing results. The simulation supports different order types, checking a submitted order cash requirements against current cash, keeping track of cash and value for each iteration of cerebro and keeping the current position on different data. Data Feeds are provided member variables to the strategy in the form of an array and shortcuts to the array positions. Broker does not necessarily mean intermediary here but manages the financial account, like a ficticious 100,000 ADA account that is subjected to profit and loss as well as commissions and slippage from the strategy we like to test over historical data.
 
-## Getting coding
+## Code for a simple backtest
 
 Let's build the program from scratch, step by step with a really simple strategy: the 20 day moving average. When the price of WMT token is above, we hold a position, and if it is below, we don't. Initially, we only hold 1 WMT, so our 100,000 account will not feel much impact no matter how well the strategy performs. Later, we refine this by buying the maximum amount of tokens so the account reflects the success or failure of our strategy.
 
@@ -144,7 +144,7 @@ results = cerebro.run()
 print(f'Final Portfolio Value: {cerebro.broker.getvalue():.2f}')
 ~~~
 
-## A more refined, simple Backtest
+## A more refined simple backtest
 
 ~~~
 import backtrader as bt
@@ -228,7 +228,7 @@ print(f'Final Portfolio Value: ${final_value:.2f}')
 print(f'Total Return: {(final_value - initial_cash) / initial_cash:.2%}')
 ~~~
 
-## Adding Plotting
+## Adding plotting
 Now we add Matplotlib and plot the results.
 New code:
 ~~~
@@ -289,7 +289,7 @@ And voila, with this we can visualize whether the strategy has potential, as it 
 
 ![Backtest Result](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/backtesting/WMT_simple_backtest.png)
 
-## Investing the Maximum
+## Investing the maximum
 Holding and squaring 1 WMT token is obviously not going to produce meaningful results (especially when factoring in costs) so we refine the code to invest the entire account balance whenever we have a long signal. These changes are made via the *next* method which controls position flow (next meaning from first to nth signal).
 
 ~~~
@@ -322,7 +322,7 @@ When plotting, this shows a surprise: our "highly profitable" strategy no longer
 
 This is caused by the [*path dependence*](https://wilmott.com/path-dependence-and-volatility/) problem of Backtesting: as the first few signals are loss-making, our portfolio runs down so much that the almost 3x profit from the 2024 rally in WMT is enjoyed by a much diminished account. Had we limited our input data to the last 1 year or only have access to that much data, the strategy would look great again. The point is therefore not so much to find a "great" strategy that makes the most out of the simulated ADA account, but by having the most reliable expected profit. We will deal with this in much more detail later.
 
-## Tracking Trades and Account Performance
+## Tracking trades and account performance
 Next, we add a logging method to our Cerebro class and tabulate results using the [Tabulate](https://pypi.org/project/tabulate/) library. This is crucial to later compare and evaluate strategies quantitatively as the human eye glancing over plots only yields a certain amount of intuitive assessment.
 
 ~~~
@@ -367,7 +367,7 @@ print(f'Total Profit/Loss: ${total_pnl:.2f}')
 print(f'Total Return: {(final_value - initial_cash) / initial_cash:.2%}')
 ~~~
 
-## More sophisticated Trading Strategies: Candlesticks example
+## More sophisticated trading strategies: candlesticks example
 
 ## Conclusion
 Backtesting is a powerful tool that can significantly improve trading and investment strategies. By simulating trades on historical data, we can identify strengths and weaknesses in our approach, manage risk more effectively, and optimize performance. Whether you are a day trader or a long-term investor, backtesting provides valuable insights that can enhance your decision-making process.
