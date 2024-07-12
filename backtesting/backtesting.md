@@ -72,11 +72,73 @@ python -c "import backtrader; print(backtrader.__version__)"
 ```
 
 ## How Backtrader works under the hood
-Backtrader is an entirely open source, community run project that has great documentation. You can refer to its [homepage](https://www.backtrader.com/docu/) or [Github](https://github.com/backtrader/backtrader).
+Developed in 2015 by Daniel Rodriguez, Backtrader has a large and active community of individual traders, there are several banks and trading houses that use
+backtrader to prototype and test new strategies. Backtrader is an entirely open source, community run project that has great documentation. You can refer to its [homepage](https://www.backtrader.com/docu/) or [Github](https://github.com/backtrader/backtrader).
 
 It leverages Python's object oriented programming and creates a "Cerebro" (Spanish for brain) class that has backtesting functionalities as its methods.
 
 ![Cerebro infrastructure](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/backtesting/cerebro.jpg)
+
+The key components of any backtesting workflow is represented as Python objects. These objects interact with one another to facilitate processing input data and trading logic computation.  We can incorporate market factors, formulate and execute a strategy, receive and execute orders, and track and measure performance. A Cerebro instance
+coordinates the overall process from collecting inputs, executing the backtest bar by bar, and providing results. The simulation supports different order types, checking a submitted order cash requirements against current cash, keeping track of cash and value for each iteration of cerebro and keeping the current position on different data. Data Feeds are provided member variables to the strategy in the form of an array and shortcuts to the array positions. Broker does not necessarily mean intermediary here but manages the financial account, like a ficticious 100,000 ADA account that is subjected to profit and loss as well as commissions and slippage from the strategy we like to test over historical data.
+
+## Getting coding
+
+We start with the most basic code first.
+
+~~~
+import backtrader as bt
+import pandas as pd
+
+class SimpleStrategy(bt.Strategy):
+    def __init__(self):
+        self.sma = bt.indicators.SimpleMovingAverage(self.data.close, period=20)
+
+    def next(self):
+        if self.data.close[0] > self.sma[0]:
+            self.buy()
+        elif self.data.close[0] < self.sma[0]:
+            self.sell()
+
+# Create a Cerebro instance
+cerebro = bt.Cerebro()
+
+# Load data from CSV
+data = pd.read_csv('AGIX.csv', parse_dates=['date'])
+data.set_index('date', inplace=True)
+data.sort_index(inplace=True)  # Ensure the data is sorted by date
+
+# Create a bt.feeds.PandasData feed
+feed = bt.feeds.PandasData(
+    dataname=data,
+    datetime=None,  # None because we set the date as index
+    open=0,  # Column position for 'open' data
+    high=1,  # Column position for 'high' data
+    low=2,   # Column position for 'low' data
+    close=3, # Column position for 'close' data
+    volume=4,# Column position for 'volume' data
+    openinterest=-1  # -1 or None if no open interest data
+)
+
+# Add data feed to Cerebro
+cerebro.adddata(feed)
+
+# Add strategy to Cerebro
+cerebro.addstrategy(SimpleStrategy)
+
+# Set initial cash
+cerebro.broker.setcash(100000.0)
+
+# Run the backtest
+results = cerebro.run()
+
+# Plot the results
+cerebro.plot()
+
+# Print final portfolio value
+print(f'Final Portfolio Value: {cerebro.broker.getvalue():.2f}')
+~~~
+
 
 ## Conclusion
 Backtesting is a powerful tool that can significantly improve trading and investment strategies. By simulating trades on historical data, you can identify strengths and weaknesses in your approach, manage risk more effectively, and optimize performance. Whether you are a day trader or a long-term investor, backtesting provides valuable insights that can enhance your decision-making process.
