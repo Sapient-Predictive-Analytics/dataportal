@@ -2,7 +2,7 @@
 Public repository for Sapient's Cardano Native Tokens data portal.
 Fungible Tokens at launch: **AGIX**, **COPI**, **IAG**, **INDY**, **LENFI**, **MELD**, **MIN**, **NEWM**, **NMKR**, **NTX**, **SNEK**, **WMT**
 
-![WMT Backtest](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/backtesting/WMT_simple_backtest.png)
+![WMT Backtest](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/backtesting/WMT_SMA20_full_signals.png)
 
 
 *Simple SMA20 backtest for WMT token since first DEX listing used to showcase use of open source Python libraries and data API to build from simple trading strategies to more complex ones.*
