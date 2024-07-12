@@ -10,6 +10,7 @@ Fungible Tokens at launch: **AGIX**, **COPI**, **IAG**, **INDY**, **LENFI**, **M
 
 
 [Feedback / Request feature on X](https://twitter.com/SapientSwarm)
+
 Please contact us or contribute to this repository if you have ideas, requests or directions how to grow quantitative trading and better market making and risk management for Cardano's native tokens investable assets universe.
 
 ***
