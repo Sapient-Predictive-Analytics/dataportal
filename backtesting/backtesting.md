@@ -293,6 +293,4 @@ And voila, with this we can visualize whether the strategy has potential, as it 
 ## More sophisticated Trading Strategies: Candlesticks example
 
 ## Conclusion
-Backtesting is a powerful tool that can significantly improve trading and investment strategies. By simulating trades on historical data, you can identify strengths and weaknesses in your approach, manage risk more effectively, and optimize performance. Whether you are a day trader or a long-term investor, backtesting provides valuable insights that can enhance your decision-making process.
-
-Using Python's Zipline library, you can easily implement and test your strategies. With the proper setup through Anaconda or Miniconda, you will have a robust environment to develop and refine your trading algorithms.
+Backtesting is a powerful tool that can significantly improve trading and investment strategies. By simulating trades on historical data, we can identify strengths and weaknesses in our approach, manage risk more effectively, and optimize performance. Whether you are a day trader or a long-term investor, backtesting provides valuable insights that can enhance your decision-making process.
