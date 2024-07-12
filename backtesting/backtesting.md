@@ -84,7 +84,7 @@ coordinates the overall process from collecting inputs, executing the backtest b
 
 ## Getting coding
 
-We start with the most basic code first.
+Let's build the program from scratch, step by step with a really simple strategy: the 20 day moving average. When the price of WMT token is above, we hold a position, and if it is below, we don't. 
 
 ~~~
 import backtrader as bt
@@ -102,7 +102,11 @@ class SimpleStrategy(bt.Strategy):
 
 # Create a Cerebro instance
 cerebro = bt.Cerebro()
+~~~
 
+The Strategy has no methods and only initializes. Pandas is imported so we can use our own data and later run tests or portfolio analysis on it.
+
+~~~
 # Load data from CSV
 data = pd.read_csv('AGIX.csv', parse_dates=['date'])
 data.set_index('date', inplace=True)
@@ -125,15 +129,16 @@ cerebro.adddata(feed)
 
 # Add strategy to Cerebro
 cerebro.addstrategy(SimpleStrategy)
+~~~
 
+Data Feeds are usually the biggest challenge for backtesting, and errors in the format or the data are most common obstacles to producing realistic trading results. In the next part of our program, we add play money of 100,000 ADA to the simulation, and run the backtest based on the definition of trading strategy. This will be refined later.
+
+~~~
 # Set initial cash
 cerebro.broker.setcash(100000.0)
 
 # Run the backtest
 results = cerebro.run()
-
-# Plot the results
-cerebro.plot()
 
 # Print final portfolio value
 print(f'Final Portfolio Value: {cerebro.broker.getvalue():.2f}')
