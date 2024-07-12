@@ -1,4 +1,4 @@
-# Introduction to Backtesting Trading Strategies with Python open source libraries Backtrader and Zipline
+# Introduction to Backtesting Trading Strategies with Python Open Source Libraries Backtrader and Zipline
 
 Backtesting is a crucial step in developing and validating trading strategies. It allows traders and investors to simulate how their strategies would have performed in the past using historical data. This process helps in identifying potential flaws and strengths in the strategy before risking real money. With the rise of algorithmic trading, backtesting has become indispensable for traders who want to ensure their strategies are robust and profitable.
 
@@ -84,7 +84,7 @@ coordinates the overall process from collecting inputs, executing the backtest b
 
 ## Getting coding
 
-Let's build the program from scratch, step by step with a really simple strategy: the 20 day moving average. When the price of WMT token is above, we hold a position, and if it is below, we don't. 
+Let's build the program from scratch, step by step with a really simple strategy: the 20 day moving average. When the price of WMT token is above, we hold a position, and if it is below, we don't. Initially, we only hold 1 AGIX, so our 100,000 account will not feel much impact no matter how well the strategy performs. Later, we refine this by buying the maximum amount of tokens so the account reflects the success or failure of our strategy.
 
 ~~~
 import backtrader as bt
@@ -255,7 +255,7 @@ ax1.legend()
 ax2.plot(df.index, df['portfolio_value'], label='Account Value', color='blue')
 ax2.plot(df.index, df['pnl'], label='Profit/Loss', color='green')
 ax2.set_title('Account Performance')
-ax2.set_ylabel('Value ($)')
+ax2.set_ylabel('Value (ADA)')
 ax2.grid(True)
 ax2.legend(loc='upper left')
 
