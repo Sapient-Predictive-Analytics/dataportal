@@ -144,6 +144,95 @@ results = cerebro.run()
 print(f'Final Portfolio Value: {cerebro.broker.getvalue():.2f}')
 ~~~
 
+## A more refined, simple Backtest
+
+~~~
+import backtrader as bt
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
+
+# Helper functions
+def get_indicator_data(indicator):
+    """Extract indicator data as a pandas Series."""
+    return pd.Series(indicator.array, index=indicator.data.datetime.datetime)
+
+def get_backtest_data(cerebro, strategy_class):
+    """Extract price data and strategy results from a backtest."""
+    strategy = cerebro.runstrategy(strategy_class)[0]
+    data = strategy.data0
+    
+    df = pd.DataFrame({
+        'open': data.open.array,
+        'high': data.high.array,
+        'low': data.low.array,
+        'close': data.close.array,
+        'volume': data.volume.array
+    }, index=data.datetime.datetime)
+    
+    df['sma'] = get_indicator_data(strategy.sma)
+    df['portfolio_value'] = strategy.portfolio_value
+    
+    buys = pd.DataFrame(strategy.buys, columns=['date', 'price'])
+    sells = pd.DataFrame(strategy.sells, columns=['date', 'price'])
+    
+    return df, buys, sells
+
+class SimpleStrategy(bt.Strategy):
+    params = (
+        ('sma_period', 20),
+    )
+
+    def __init__(self):
+        self.sma = bt.indicators.SimpleMovingAverage(self.data.close, period=self.params.sma_period)
+        self.order = None
+        self.buys = []
+        self.sells = []
+        self.portfolio_value = [self.broker.getvalue()]
+
+    def next(self):
+        self.portfolio_value.append(self.broker.getvalue())
+        
+        if not self.position:
+            if self.data.close[0] > self.sma[0]:
+                self.order = self.buy()
+                self.buys.append((self.data.datetime.date(0), self.data.close[0]))
+        else:
+            if self.data.close[0] < self.sma[0]:
+                self.order = self.sell()
+                self.sells.append((self.data.datetime.date(0), self.data.close[0]))
+
+# Load data
+data = pd.read_csv('AGIX.csv', parse_dates=['date'], index_col='date')
+
+# Create a Cerebro instance
+cerebro = bt.Cerebro()
+
+# Add data feed to Cerebro
+cerebro.adddata(bt.feeds.PandasData(dataname=data))
+
+# Add strategy to Cerebro
+cerebro.addstrategy(SimpleStrategy)
+
+# Set initial cash
+initial_cash = 100000.0
+cerebro.broker.setcash(initial_cash)
+
+# Extract data and results
+df, buys, sells = get_backtest_data(cerebro, SimpleStrategy)
+
+# Print final portfolio value
+final_value = df['portfolio_value'].iloc[-1]
+print(f'Final Portfolio Value: ${final_value:.2f}')
+print(f'Total Return: {(final_value - initial_cash) / initial_cash:.2%}')
+~~~
+
+## Adding Plotting
+Now we add Matplotlib and plot the results.
+![Backtest Result](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/backtesting/AGIX_simple_backtest.png)
+
+## More sophisticated Trading Strategies: Candlesticks example
 
 ## Conclusion
 Backtesting is a powerful tool that can significantly improve trading and investment strategies. By simulating trades on historical data, you can identify strengths and weaknesses in your approach, manage risk more effectively, and optimize performance. Whether you are a day trader or a long-term investor, backtesting provides valuable insights that can enhance your decision-making process.
