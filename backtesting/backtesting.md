@@ -316,6 +316,12 @@ def next(self):
 
 These changes will make the strategy invest all available cash into WMT when it buys, and sell the entire position when it sells. This will equate the accout balance to the portfolio balance and produces the most meaningful results - if we want a portfolio, we can simply combine strategies. For the purpose of a single asset backtest, except when for fine tuning sizing strategies, this should lead to the most meaningful results.
 
+When plotting, this shows a surprise: our "highly profitable" strategy no longer looks so great.
+
+![Performance when fully invested](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/backtesting/WMT_full_invest.png)
+
+This is caused by the [*path dependence*](https://wilmott.com/path-dependence-and-volatility/) problem of Backtesting: as the first few signals are loss-making, our portfolio runs down so much that the almost 3x profit from the 2024 rally in WMT is enjoyed by a much diminished account. Had we limited our input data to the last 1 year or only have access to that much data, the strategy would look great again. The point is therefore not so much to find a "great" strategy that makes the most out of the simulated ADA account, but by having the most reliable expected profit. We will deal with this in much more detail later.
+
 ## More sophisticated Trading Strategies: Candlesticks example
 
 ## Conclusion
