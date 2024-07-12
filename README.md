@@ -8,8 +8,9 @@ Fungible Tokens at launch: **AGIX**, **COPI**, **IAG**, **INDY**, **LENFI**, **M
 *Simple SMA20 backtest for WMT token since first DEX listing used to showcase use of open source Python libraries and data API to build from simple trading strategies to more complex ones.*
 
 
-
+***
 [Feedback / Request feature on X](https://twitter.com/SapientSwarm)
+***
 
 Please contact us or contribute to this repository if you have ideas, requests or directions how to grow quantitative trading and better market making and risk management for Cardano's native tokens investable assets universe.
 
