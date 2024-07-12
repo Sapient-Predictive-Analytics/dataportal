@@ -289,6 +289,32 @@ And voila, with this we can visualize whether the strategy has potential, as it 
 
 ![Backtest Result](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/backtesting/WMT_simple_backtest.png)
 
+## Investing the Maximum
+Holding and squaring 1 WMT token is obviously not going to produce meaningful results (especially when factoring in costs) so we refine the code to invest the entire account balance whenever we have a long signal. These changes are made via the *next* method which controls position flow (next meaning from first to nth signal).
+
+~~~
+def next(self):
+        current_value = self.broker.getvalue()
+        self.portfolio_value.append(current_value)
+        
+        if self.order:
+            return  # We have a pending order, don't do anything
+        
+        if not self.position:  # We don't have a position
+            if self.data.close[0] > self.sma[0]:
+                available_cash = self.broker.getcash()
+                max_size = int(available_cash / self.data.close[0])
+                self.order = self.buy(size=max_size)
+                self.buys.append((self.data.datetime.date(0), self.data.close[0]))
+                self.log_trade("BUY", current_value, max_size)
+        else:  # We have an active position
+            if self.data.close[0] < self.sma[0]:
+                self.order = self.sell(size=self.position.size)
+                self.sells.append((self.data.datetime.date(0), self.data.close[0]))
+                self.log_trade("SELL", current_value, self.position.size)
+~~~
+
+These changes will make the strategy invest all available cash into WMT when it buys, and sell the entire position when it sells. This will equate the accout balance to the portfolio balance and produces the most meaningful results - if we want a portfolio, we can simply combine strategies. For the purpose of a single asset backtest, except when for fine tuning sizing strategies, this should lead to the most meaningful results.
 
 ## More sophisticated Trading Strategies: Candlesticks example
 
