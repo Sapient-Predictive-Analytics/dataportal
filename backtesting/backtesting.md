@@ -108,7 +108,7 @@ The Strategy has no methods and only initializes. Pandas is imported so we can u
 
 ~~~
 # Load data from CSV
-data = pd.read_csv('AGIX.csv', parse_dates=['date'])
+data = pd.read_csv('WMT.csv', parse_dates=['date'])
 data.set_index('date', inplace=True)
 data.sort_index(inplace=True)  # Ensure the data is sorted by date
 
@@ -204,7 +204,7 @@ class SimpleStrategy(bt.Strategy):
                 self.sells.append((self.data.datetime.date(0), self.data.close[0]))
 
 # Load data
-data = pd.read_csv('AGIX.csv', parse_dates=['date'], index_col='date')
+data = pd.read_csv('WMT.csv', parse_dates=['date'], index_col='date')
 
 # Create a Cerebro instance
 cerebro = bt.Cerebro()
@@ -243,11 +243,11 @@ These are the imports.
 # Create plots
 fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(12, 10), gridspec_kw={'height_ratios': [2, 1]}, sharex=True)
 
-# Top subplot: AGIX price and SMA
+# Top subplot: WMT price and SMA
 ax1.plot(df.index, df['close'], label='Close Price')
-ax1.plot(df.index, df['sma'], label='SMA')
-ax1.set_title('AGIX Price and Trading Signal')
-ax1.set_ylabel('Price')
+ax1.plot(df.index, df['sma'], label='SMA20')
+ax1.set_title('WMT Price and Trading Signal')
+ax1.set_ylabel('Price (ADA)')
 ax1.grid(True)
 ax1.legend()
 
@@ -287,7 +287,7 @@ plt.show()
 
 And voila, with this we can visualize whether the strategy has potential, as it shows more than just the final Profit and Loss and provides lots of clues if the variability of results, drawdown, number of trading signals and so on show promise for further refinement or we better move on and ideate on new rules for entry and exit.
 
-![Backtest Result](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/backtesting/AGIX_simple_backtest.png)
+![Backtest Result](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/backtesting/WMT_simple_backtest.png)
 
 
 ## More sophisticated Trading Strategies: Candlesticks example
