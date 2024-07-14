@@ -375,6 +375,104 @@ This IPython notebook provides a comprehensive, step by step guide with the abov
 
 
 ## Upgrading to Zipline
+Backtrader and Zipline are both popular Python libraries for backtesting trading strategies, but Zipline has an arguably larger community and more professional users mainly due to its origin in Quantopian crowdsourced hedge fund that later migrated to Nasdaq Data for the API and Robinhood for the trading elements. 
+
+There are some key differences. For data handling, Backtrader is more flexible with data inputs, while Zipline uses a specific data bundle system that benefits from "ingesting" API data. Therefore, before our API is fully production ready, Backtrader is the more lightweight and less error-prone choice.
+
+Zipline is generally faster for large datasets due to its use of Pandas and has a larger ecosystem due to its Quantopian heritage described above.Backtrader is considered easier to learn for beginners. If you want to try out Zipline, the community page maintained by [ML4Trading](https://zipline.ml4trading.io/) is a great place to start.
+
+Code snippets for installing and using Zipline:
+~~~
+pip install zipline-reloaded #conda install zipline-reloaded for Anaconda/Miniconda
+~~~
+
+The commands differ greatly from Backtrader as it does not use an object-oriented approach and runs all functions directly inside our program.
+
+~~~
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from zipline.api import order, record, symbol
+from zipline.finance import commission, slippage
+from zipline import run_algorithm
+from datetime import datetime
+from pandas.tseries.offsets import BDay
+
+def initialize(context):
+    context.asset = symbol('WMT')
+    context.sma_period = 20
+    context.in_position = False
+    context.portfolio_value = []
+
+def handle_data(context, data):
+    current_price = data.current(context.asset, 'price')
+    historical_data = data.history(context.asset, 'close', context.sma_period, '1d')
+    sma = historical_data.mean()
+    
+    cash = context.portfolio.cash
+    position = context.portfolio.positions[context.asset].amount
+    market_value = position * current_price
+    portfolio_value = cash + market_value
+    context.portfolio_value.append(portfolio_value)
+
+    if not context.in_position and current_price > sma:
+        shares_to_buy = int(cash / current_price)
+        order(context.asset, shares_to_buy)
+        context.in_position = True
+    elif context.in_position and current_price < sma:
+        order(context.asset, -position)
+        context.in_position = False
+
+    record(price=current_price, sma=sma, portfolio_value=portfolio_value)
+
+def analyze(context, perf):
+    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(12, 10), gridspec_kw={'height_ratios': [2, 1]}, sharex=True)
+
+    perf.index = perf.index.tz_localize(None)
+    ax1.plot(perf.index, perf.price, label='Close Price')
+    ax1.plot(perf.index, perf.sma, label='SMA')
+    ax1.set_title('Asset Price and Trading Signal')
+    ax1.set_ylabel('Price')
+    ax1.grid(True)
+    ax1.legend()
+
+    ax2.plot(perf.index, perf.portfolio_value, label='Portfolio Value', color='green')
+    ax2.set_title('Portfolio Value')
+    ax2.set_ylabel('Value ($)')
+    ax2.grid(True)
+    ax2.legend()
+
+    plt.tight_layout()
+    plt.show()
+
+    initial_value = perf.portfolio_value.iloc[0]
+    final_value = perf.portfolio_value.iloc[-1]
+    total_return = (final_value - initial_value) / initial_value
+
+    print(f'Initial Portfolio Value: ${initial_value:.2f}')
+    print(f'Final Portfolio Value: ${final_value:.2f}')
+    print(f'Total Return: {total_return:.2%}')
+
+def run_zipline_backtest(start_date, end_date, capital_base):
+    return run_algorithm(
+        start=start_date,
+        end=end_date,
+        initialize=initialize,
+        handle_data=handle_data,
+        analyze=analyze,
+        capital_base=capital_base,
+        bundle='csvdir',
+        data_frequency='daily'
+    )
+
+if __name__ == '__main__':
+    start = datetime(2022, 1, 1)
+    end = datetime(2024, 6, 30)
+    initial_capital = 100000.0
+
+    results = run_zipline_backtest(start, end, initial_capital)
+~~~
+
 
 ## More sophisticated trading strategies: candlesticks example
 Coming in August 2024.
