@@ -370,6 +370,8 @@ print(f'Total Return: {(final_value - initial_cash) / initial_cash:.2%}')
 
 IPython notebook and video walkthrough.
 
+## Upgrading to Zipline
+
 ## More sophisticated trading strategies: candlesticks example
 Coming in August 2024.
 
