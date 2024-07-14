@@ -8,7 +8,7 @@ Getting started is easiest with Backtrader which is the simpler of the two libra
 
 Let's start with the most obvious question.
 
-## Why Bother with Backtesting Trading Strategies in the first place?
+## Why bother with backtesting trading strategies in the first place?
 
 Backtesting offers several benefits that make it an essential practice for both novice and experienced traders:
 
@@ -18,18 +18,19 @@ Backtesting offers several benefits that make it an essential practice for both 
 4. **Improvement and Optimization**: Backtesting allows for continuous improvement and optimization of trading strategies. Traders can tweak and refine their strategies based on backtesting results to enhance performance.
 5. **Confidence Building**: By seeing a strategy perform well historically, traders gain confidence in deploying it in live markets. This psychological benefit is particularly important in trading, where discipline and confidence play significant roles.
 
-## Benefits for Different Types of Investors
+## Benefits for different types of token holders
 
-Backtesting is not just for day traders. Long-term investors can also reap significant benefits from backtesting:
+Backtesting is not just for day traders. HODLers can also reap significant benefits from backtesting:
 
 - **Day Traders**: For day traders, backtesting helps in fine-tuning short-term strategies and identifying profitable entry and exit points.
 - **Swing Traders**: Swing traders can use backtesting to develop strategies that capitalize on medium-term price movements, optimizing trade timing and risk management.
 - **Long-Term Investors**: Long-term investors can backtest strategies that involve holding assets for extended periods. This helps in understanding the potential long-term performance and risk of the strategy.
 
-## Setting Up the Environment
+## Setting up the environment
 
 ### Set up a virtual environment: 
-First, create a new directory for your project and set up a virtual environment:
+As a first step, it is often advisable to create a new directory for the backtesting project and set up a virtual environment. This allows sharing requirements.txt files and specifying versions of packages that may be required. As per our previous casestudy, we stick to Python 3.8. for example, whereas in our dayjobs we may be using 3.12. at the moment.
+
 ```bash
    mkdir backtest_project
    cd backtest_project
@@ -367,7 +368,10 @@ print(f'Total Profit/Loss: ${total_pnl:.2f}')
 print(f'Total Return: {(final_value - initial_cash) / initial_cash:.2%}')
 ~~~
 
+IPython notebook and video walkthrough.
+
 ## More sophisticated trading strategies: candlesticks example
+Coming in August 2024.
 
 ## Conclusion
 Backtesting is a powerful tool that can significantly improve trading and investment strategies. By simulating trades on historical data, we can identify strengths and weaknesses in our approach, manage risk more effectively, and optimize performance. Whether you are a day trader or a long-term investor, backtesting provides valuable insights that can enhance your decision-making process.
