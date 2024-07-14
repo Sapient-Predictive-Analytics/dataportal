@@ -368,7 +368,11 @@ print(f'Total Profit/Loss: ${total_pnl:.2f}')
 print(f'Total Return: {(final_value - initial_cash) / initial_cash:.2%}')
 ~~~
 
-IPython notebook and video walkthrough.
+## IPython notebook and video walkthrough.
+This IPython notebook provides a comprehensive, step by step guide with the above program how to implement our SMA20 trading strategy as a placeholder for more sophisticated trading strategies. It is organized in 3 steps with more coding intensive tasks like Plotting added later. You can download this file together with WMT.csv for interactive use and modification.
+
+[IPython Notebook also linked here](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/backtesting/WMT%20Backtrader%20with%20Plotting.ipynb)
+
 
 ## Upgrading to Zipline
 
