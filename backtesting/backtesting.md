@@ -473,9 +473,14 @@ if __name__ == '__main__':
     results = run_zipline_backtest(start, end, initial_capital)
 ~~~
 
-
 ## More sophisticated trading strategies: candlesticks example
 Coming in August 2024.
+
+## Adding a second degree of freedom and our Heatmap tool
+Currently, we are using a single factor model to decide whether to be in the market or not. This is obviously as simple as it gets, but useful to fine-tune our model later and get familiar with the different backtesting, plotting and portfolio management packages. What would happen if we used a 15-day or 25-day moving average instead of 20? Would we make more or less money? Completely by chance, the 20-day SMA that was chosen as a dummy happens to be the best game in town for World Mobile Token. How to visualize these tweaks, discussion of introducing bias and stresstesting models with simulation, and our Heatmap tool can be continued in another chapter of the Dataportal here: [HeatmapTool](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/HeatmapTool/heatmap.md)
+
+A preview of how the Heatmap works and how lucky we were with the 20-day pick can be seen in this plot:
+![Plot](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/HeatmapTool/Heatmap1D.png)
 
 ## Conclusion
 Backtesting is a powerful tool that can significantly improve trading and investment strategies. By simulating trades on historical data, we can identify strengths and weaknesses in our approach, manage risk more effectively, and optimize performance. Whether you are a day trader or a long-term investor, backtesting provides valuable insights that can enhance your decision-making process.
