@@ -1,15 +1,18 @@
 # Our Heatmap Tool for Strategy Factor Optimization
 
-** Introduction **
+**Introduction**
+
 The Heatmap Tool is a visualization technique we use to fine-tune and optimize our trading strategies. It provides a color-coded grid representation of strategy performance across various parameter combinations, allowing traders and analysts to quickly identify optimal settings and understand the strategy's sensitivity to different parameters. More importantly, it allows the identification of *safe areas* where the change of one or several indicators does not affect the results much, and areas that are highly likely to produce data mining bias and spurious simulation results where we have a maximum simulation profit, very close to much worse performance. This kind of tweaking has to be avoided at all costs, as it will not lead to reproducible market edge.
 
 ## How It Works
+
 1. **Parameter Space Definition**: Define the ranges of parameters you want to test for your strategy.
 2. **Backtesting**: Run the trading strategy multiple times, each with a different combination of parameters.
 3. **Performance Calculation**: Calculate a performance metric (e.g., total return, Sharpe ratio) for each parameter combination.
 4. **Visualization**: Create a heatmap where each cell represents a parameter combination, and the color intensity represents the performance metric.
 
 ## Using the Heatmap Tool to Fine-tune Trading Strategies
+
 1. **Parameter Sensitivity Analysis**: 
    - Observe how changes in parameters affect strategy performance.
    - Identify which parameters have the most significant impact on results.
