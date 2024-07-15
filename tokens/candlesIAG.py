@@ -23,7 +23,7 @@ s = mpf.make_mpf_style(marketcolors=mc)
 
 # Create the candlestick chart with volume
 fig, axes = mpf.plot(df, type='candle', style=s, volume=True, figsize=(16, 10),
-                     title='IAG Toekn Price (ADA) and Volume',
+                     title='IAG Token Price (ADA) and Volume',
                      ylabel='Price (ADA)',
                      ylabel_lower='Volume',
                      returnfig=True)
