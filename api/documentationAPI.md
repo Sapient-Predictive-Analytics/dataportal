@@ -12,6 +12,31 @@ This consists of initially four components:
 ### Cloud Storage
 
 ### API Framework
+To access WMT token prices the following Lambda code will be provided:
+
+~~~
+import json
+import boto3
+
+s3 = boto3.client('s3')
+
+def lambda_handler(event, context):
+    bucket_name = 'sapientassets'
+    file_name = 'WMT.csv'
+    
+    try:
+        response = s3.get_object(Bucket=bucket_name, Key=file_name)
+        data = response['Body'].read().decode('utf-8')
+        return {
+            'statusCode': 200,
+            'body': json.dumps({'data': data})
+        }
+    except Exception as e:
+        return {
+            'statusCode': 500,
+            'body': json.dumps({'error': str(e)})
+        }
+~~~
 
 ### Cloud Hosting
 
