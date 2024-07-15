@@ -54,9 +54,20 @@ Miniconda is a lightweight alternative to Anaconda that includes only the conda 
 1. **Download Miniconda**: Visit the [Miniconda website](https://docs.conda.io/en/latest/miniconda.html) and download the installer for your operating system.
 2. **Install Miniconda**: Follow the installation instructions provided on the website.
 
+### Adding packages if not available through conda
+
+In our Anaconda environment, we can easily use alternative installation channel conda-forge to install open source libraries we may need that are not available in conda, for example mplfinance for charting.
+
+~~~
+conda config --add channels conda-forge
+conda install -c conda-forge mplfinance
+~~~
+
 ### Setting Up Backtrader
 
 **Activate base environment**
+
+If that fails, we can make use of pip by activating base. This approach will make the library available across all Anaconda tools, including Spyder and Jupyter notebooks. However, be mindful when using this approach outside the dedicated environment as it modifies the base environment, which could potentially affect other projects.
 
 ```
 conda activate base
