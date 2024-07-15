@@ -66,11 +66,24 @@ Seaborn, a statistical data visualization library built on top of matplotlib, is
 7. **Integration with Matplotlib**:
    - Being built on matplotlib, it allows for further customization when needed.
 
-## Installing Seaborn
+Website and Installation
+[**Seaborn**](https://seaborn.pydata.org)
+Seaborn is a Python data visualization library based on Matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics. It is particularly useful for making complex visualizations from data in pandas DataFrames. Seaborn arguably looks better and requires less code than Matplotlib, but lacks some cutomization features of its older sibling. When DataFrames are used instead of spreadsheets for Fund data, plotting with Seaborn would be particularly easy and attractive.
 
-```python
-conda install seaborn
-```
+`Installation:`
+~~~~
+pip install seaborn
+~~~~
+
+Open Source Status: BSD-3-Clause license.
+
+[Seaborn GitHub](https://github.com/mwaskom/seaborn)
+
+`Example of a scatterplot:`
+
+![Seaborn Plots](https://seaborn.pydata.org/_images/scatterplot_sizes.png)
+
+***
 
 ## Adding Heatmap to our WMT Backtest
 For the backtesting previously done for a SMA20 strategy, we can implement it as a primitive to establish how the tool work. Note that for 1-dimensional strategies it is relatively pointness. Nevertheless, it shows from scratch how the setup is done.
