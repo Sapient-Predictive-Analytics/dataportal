@@ -5,7 +5,7 @@ The Heatmap Tool is a visualization technique we use to fine-tune and optimize o
 
 ![Sapient](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/HeatmapTool/NEW_ICON_SW.png)
 
-![Sapient](<img src="[images/example.png](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/HeatmapTool/NEW_ICON_SW.png)" width="100" />)
+<img src="[images/example.png](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/HeatmapTool/NEW_ICON_SW.png)" width="100" />
 
 ## How It Works
 1. **Parameter Space Definition**: Define the ranges of parameters you want to test for your strategy.
