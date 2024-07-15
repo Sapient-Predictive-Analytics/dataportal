@@ -9,6 +9,7 @@ Fungible Tokens at launch: **AGIX**, **COPI**, **IAG**, **INDY**, **LENFI**, **M
 
 
 ***
+![x](http://i.imgur.com/tXSoThF.png)
 [Feedback / Request feature on X](https://twitter.com/SapientSwarm)
 ***
 
