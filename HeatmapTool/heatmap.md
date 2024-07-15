@@ -77,7 +77,11 @@ For the backtesting previously done for a SMA20 strategy, we can implement it as
 3. It runs the backtest for SMA periods from 13 to 27 and creates a heatmap of the returns.
 4. After the heatmap, it runs a detailed backtest with SMA 20 (as in the original script) and provides the detailed output and visualization.
 5. Finally, it prints the best performing SMA period based on the heatmap results.
-   
+
+The plot output looks like this for our most recent data feed:
+
+![Plot](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/HeatmapTool/Heatmap1D.png)
+
 ~~~
 import seaborn as sns
 
