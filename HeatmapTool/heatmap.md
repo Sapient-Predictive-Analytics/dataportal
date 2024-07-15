@@ -78,9 +78,7 @@ For the backtesting previously done for a SMA20 strategy, we can implement it as
 4. After the heatmap, it runs a detailed backtest with SMA 20 (as in the original script) and provides the detailed output and visualization.
 5. Finally, it prints the best performing SMA period based on the heatmap results.
 
-The plot output looks like this for our most recent data feed:
-
-![Plot](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/HeatmapTool/Heatmap1D.png)
+This is the additional code:
 
 ~~~
 import seaborn as sns
@@ -116,7 +114,9 @@ print(f"Best return: {best_return:.2%}")
 
 This produces the following 1D-heatmap for WMT.
 
-To show more meaningful features of the Heatmap, let us refine the trading signal to now be a Moving Average Crossover of the 10 and 30 day moving averages, so there are 2 factors to optimize in relation to one another.
+![Plot](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/HeatmapTool/Heatmap1D.png)
+
+To show more meaningful features of the Heatmap, traders usually use trading strategies that have 2 or 3 degrees of freedom where factors can be plotted over a 2D area or 3D space that is easy to process for the human brain but possesses enough complexity to justify use of such a tool. Let's refine the earlier SMA20 single factor trading signal to now be a Moving Average Crossover of the 10 and 30 day moving averages, so there are 2 factors to optimize in relation to one another that we can plot as 2-Dimensions.
 
 The new script needs to:
 
