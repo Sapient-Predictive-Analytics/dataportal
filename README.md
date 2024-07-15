@@ -36,8 +36,10 @@ Simple data manipulation on clean WMT (Minswap) data
 ## Backtesting and Heatmap Tool Milestone 2
 Introduction to backtesting concepts, the Zipline package, trading strategy design with heatmaps and use of Seaborn and other plotting libraries.
 New token prices have been added and charts, backtests and heatmap related files (images, code and notebooks) are added regularly.
+
 *Example: IAGON is now on the Dataportal*
-![IAG Candles](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/tokens/IAG_candlestick.png)
+
+![IAG Candles](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/tokens/IAGON_candles.png)
 
 ***
 ## Video walkthrough of trading strategy design for native tokens
