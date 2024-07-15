@@ -1,6 +1,5 @@
 # Our Heatmap Tool for Strategy Factor Optimization
 
-![Barracuda](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/HeatmapTool/zHero.png)
 
 **Introduction**
 
