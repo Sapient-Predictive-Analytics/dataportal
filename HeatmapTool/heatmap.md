@@ -130,7 +130,7 @@ The new script needs to:
 [IPython Notebook for the 2 Factor Strategy and Heatmap](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/HeatmapTool/MAcrossOver.ipynb)
 
 The heatmap will show 81 unique values (9x9 grid) with varying shades of green representing the returns for each combination of short-term and long-term moving averages.
-This approach allows you to visualize the performance across different parameter combinations and then dive into the details of the best-performing strategy. You can easily modify the short_range and long_range lists if you want to experiment with different moving average periods. CopyRetryClaude can make mistakes. Please double-check responses.
+This approach allows you to visualize the performance across different parameter combinations and then dive into the details of the best-performing strategy. You can easily modify the short_range and long_range lists if you want to experiment with different moving average periods.
 
 This is how the plot looks like now, tweaking two factors instead of one on a Seaborn Heatmap.
 
