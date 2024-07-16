@@ -48,7 +48,7 @@ import requests
 import sys
 
 def main():
-    api_url = "https://sapient-api-gateway-url.amazonaws.com/prod/data"
+    api_url = "https://gwsl86ibha.execute-api.us-east-1.amazonaws.com/data"
     
     try:
         response = requests.get(api_url)
@@ -62,3 +62,7 @@ def main():
 if __name__ == "__main__":
     main()
 ~~~
+
+The API has been deployed on *https://gwsl86ibha.execute-api.us-east-1.amazonaws.com* and is ready for integration with Backtesting in the next Milestone.
+
+![SapientGateway](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/api/api_gateway.jpg)
