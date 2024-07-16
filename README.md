@@ -50,4 +50,4 @@ New token prices have been added and charts, backtests and heatmap related files
 ***
 ## Video walkthrough of trading strategy design for native tokens
 
-[<img src="https://i.imgur.com/NiU8xcT.png" width="200" height="140" />](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+[<img src="https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/HeatmapTool/NEW_ICON_SW.png" width="200" height="140" />](https://youtu.be/f6Z5DMaJmcw)
