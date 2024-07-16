@@ -66,3 +66,7 @@ if __name__ == "__main__":
 The API has been deployed on *https://gwsl86ibha.execute-api.us-east-1.amazonaws.com* and is ready for integration with Backtesting in the next Milestone.
 
 ![SapientGateway](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/api/api_gateway.jpg)
+
+Right now, token data for the four provided tickers WMT, AGIX, SNEK and IAG is available and this will be expanded to all 12 tokens and custom trade signals later in the project.
+
+![Uploads](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/api/Screenshot%20(201).png)
