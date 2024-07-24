@@ -51,3 +51,9 @@ New token prices have been added and charts, backtests and heatmap related files
 ## Video walkthrough of trading strategy design for native tokens
 
 [<img src="https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/HeatmapTool/NEW_ICON_SW.png" width="200" height="140" />](https://youtu.be/f6Z5DMaJmcw)
+
+***
+
+## Log-plotting and financial candlesticks charts
+
+![LogMILK](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/tokens/MILK_candles_log.png)
