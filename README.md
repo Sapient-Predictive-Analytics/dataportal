@@ -59,3 +59,17 @@ New token prices have been added and charts, backtests and heatmap related files
 ![LogMILK](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/tokens/MILK_candles_log.png)
 
 *Here, we scale the axis logarithmically optimized for the entire price range to show meaningful price action across a highly volatile token like MILK (MuesliSwap's native token)*
+
+~~~
+def custom_log_scale(min_val, max_val):
+    lower = max(0.05, np.floor(min_val * 2) / 2)
+    upper = np.ceil(max_val * 2) / 2
+    
+    base = 2
+    start = np.log(lower) / np.log(base)
+    stop = np.log(upper) / np.log(base)
+    ticks = np.logspace(start, stop, num=8, base=base)
+    
+    ticks[0] = lower
+    return lower, upper, ticks
+~~~
