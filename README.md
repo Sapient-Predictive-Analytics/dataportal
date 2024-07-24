@@ -57,3 +57,5 @@ New token prices have been added and charts, backtests and heatmap related files
 ## Log-plotting and financial candlesticks charts
 
 ![LogMILK](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/tokens/MILK_candles_log.png)
+
+*Here, we scale the axis logarithmically optimized for the entire price range to show meaningful price action across a highly volatile token like MILK (MuesliSwap's native token)*
