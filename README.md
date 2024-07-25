@@ -47,6 +47,12 @@ New token prices have been added and charts, backtests and heatmap related files
 
 ![SNEK](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/tokens/snek.png)
 
+*MIN is now on the Dataportal*
+
+![MIN Candles](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/tokens/MIN_candles_log.png)
+
+![MINv2](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/tokens/minv2.png)
+
 ***
 ## Video walkthrough of trading strategy design for native tokens
 
