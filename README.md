@@ -79,3 +79,7 @@ def custom_log_scale(min_val, max_val):
     ticks[0] = lower
     return lower, upper, ticks
 ~~~
+
+***
+*Below is a [Heatmap](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/HeatmapTool/heatmap.md) for parameter-optimization and risk-tuning for a trading strategies with 2 degrees of freedom*
+![heatmap2d](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/HeatmapTool/Heatmap2D.png)
