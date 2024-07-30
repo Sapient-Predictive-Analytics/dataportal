@@ -484,8 +484,8 @@ if __name__ == '__main__':
     results = run_zipline_backtest(start, end, initial_capital)
 ~~~
 
-## More sophisticated trading strategies: candlesticks example
-Coming in August 2024.
+## More sophisticated trading strategies
+Refer to [this](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/backtesting/backtesting2.md) section for refinements and [another](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/risk/risk.md) one for discussions about risk and portfolio evaluation.
 
 ## Adding a second degree of freedom and our Heatmap tool
 Currently, we are using a single factor model to decide whether to be in the market or not. This is obviously as simple as it gets, but useful to fine-tune our model later and get familiar with the different backtesting, plotting and portfolio management packages. What would happen if we used a 15-day or 25-day moving average instead of 20? Would we make more or less money? Completely by chance, the 20-day SMA that was chosen as a dummy happens to be the best game in town for World Mobile Token. How to visualize these tweaks, discussion of introducing bias and stresstesting models with simulation, and our Heatmap tool can be continued in another chapter of the Dataportal here: [HeatmapTool](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/HeatmapTool/heatmap.md)
