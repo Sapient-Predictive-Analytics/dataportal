@@ -21,3 +21,9 @@
 ### Biases and overfitting
 
 ### Oracle-risk
+
+## Other factors
+
+### Basis risk
+
+### Model risk, jumps and "rug-pulls"
