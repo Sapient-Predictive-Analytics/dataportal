@@ -39,7 +39,7 @@ New token prices have been added and charts, backtests and heatmap related files
 
 *IAGON is now on the Dataportal*
 
-![IAG Candles](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/tokens/IAGON_candles.png)
+![IAG Candles](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/tokens/IAG_candles_log.png)
 
 *SNEK is now on the Dataportal*
 
