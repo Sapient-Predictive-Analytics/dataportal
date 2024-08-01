@@ -12,6 +12,17 @@
 ### Value at risk
 
 ### Sharpe-, Sortino- and Calmar-Ratio
+
+# Risk Management in Native Token Investments: Beyond the Sharpe Ratio
+
+In the dynamic world of native tokens, which often experience huge volatility and liquidity might be moving between DEXes, risk management of strategy designs is crucial in this compelling yet volatile asset class. As the market matures, so too must our approaches to risk management and performance evaluation. While traditional finance has long relied on metrics like the Sharpe ratio to gauge risk-adjusted returns, the unique characteristics of the native token space demand a more nuanced perspective.
+
+The Sharpe ratio, developed by Nobel laureate William Sharpe, has been a cornerstone of portfolio analysis for decades. It measures an investment's excess return relative to its volatility, providing a standardized way to compare different assets or strategies. In essence, it answers the question: How much additional return are we getting for each unit of risk we're taking on?
+
+However, the crypto market's tendency towards extreme price swings and non-normal return distributions has led many analysts to question whether the Sharpe ratio alone is sufficient for evaluating native token investments. Enter alternative metrics like the Sortino and Calmar ratios, which may offer more appropriate benchmarks for judging performance in this unique asset class.
+
+As we delve deeper into these metrics and their applications, we'll explore how a more comprehensive toolkit for risk management can help investors navigate the exciting yet treacherous waters of native token investments. Whether you're a seasoned trader or a curious newcomer, understanding these concepts is crucial for developing robust trading strategies and making informed investment decisions in the blockchain era.
+
 Knowing the Sharpe Ratio, Sortino Ratio, and Calmar Ratio is important for any investor, regardless of how large or small their portfolio is. The goal of this post is to deep dive into the Sharpe Ratio, Sortino Ratio, and Calmar Ratio to show how each measure the performance of an investment and/or investment manager. Regardless of whether you’re a hands-off or hands-on investor, knowing these performance metrics can save you a fortune over the course of your lifetime. Let’s jump right into it by looking at the Sharpe Ratio first!
 
 The Sharpe Ratio measures an investment’s risk adjusted performance relative to its volatility. Nobel Prize winning economist William Sharpe created the ratio in 1966. The comparison of performance to volatility is the main reason that the Sharpe Ratio is the industry standard for performance evaluation. Sharpe Ratio is mostly used by investors, portfolio managers, and traders who focus on the stock market and bond market. Here is the Sharpe Ratio calculation for a more thorough understanding:
@@ -20,11 +31,7 @@ Sharpe Ratio = (Portfolio return — Risk free rate) / Portfolio volatility
 
 Let’s define the formula terms for those unfamiliar with them. The portfolio return is the percentage gain or loss in the portfolio. The risk free rate is the rate of return for investing in a 10 year US government bond. Portfolio volatility is measured by standard deviation, a statistical method for measuring data dispersion around the mean of a dataset. Portfolio standard deviation measures the variability of the portfolio. It also accounts for the variability of all assets and asset weightings, where weighting is the percentage of one asset’s value relative to the total portfolio value. Please note that each example from the reading uses annual numbers.
 
-Time to look at a real world comparison of Sharpe Ratio. Investment manager John from XYZ fund earns a 35% return in 2022. A 10 year US Government bond traded at 3.62% at the end of 2022, which is the risk free rate. John’s portfolio volatility is 20%. Plugging these numbers into the Sharpe Ratio formula, John has an annual Sharpe Ratio of 1.57:
-
-John’s Sharpe = (35% return — 3.62% risk free rate) / 20% portfolio volatility = 1.57 Sharpe Ratio
-
-Amazing! Now that we calculated Sharpe Ratio, it’s important to understand what it means. Think of calculation and interpretation as two separate tasks, because focusing too heavily on calculation causes us to lose sight of the forest from the trees. The ideal portfolio Sharpe Ratio has a higher risk adjusted return than its volatility. That’s why a Sharpe of 1 is considered acceptable, while a Sharpe of 1.5 or higher is preferrable. A Sharpe Ratio below 1 means the portfolio’s risk adjusted return is less than its volatility, and the investor is risking more than they are earning. No investor prefers this scenario if there is a better alternative. John from XYZ firm has demonstrated exceptional returns and risk management based on his Sharpe Ratio of 1.57. Let’s review the numerical interpretation of Sharpe ratios before moving on:
+Think of calculation and interpretation as two separate tasks, because focusing too heavily on calculation causes us to lose sight of the forest from the trees. The ideal portfolio Sharpe Ratio has a higher risk adjusted return than its volatility. That’s why a Sharpe of 1 is considered acceptable, while a Sharpe of 1.5 or higher is preferrable. A Sharpe Ratio below 1 means the portfolio’s risk adjusted return is less than its volatility, and the investor is risking more than they are earning. No investor prefers this scenario if there is a better alternative. John from XYZ firm has demonstrated exceptional returns and risk management based on his Sharpe Ratio of 1.57. Let’s review the numerical interpretation of Sharpe ratios before moving on:
 
 Sharpe ratio > 1; the investment manager is earning more than their risk
 
@@ -32,15 +39,7 @@ Sharpe ratio = 1; the investment manager is earning the same as their risk
 
 Sharpe Ratio < 1; the investment manager is earning less than their risk
 
-Let’s extend our analysis by comparing John’s performance with Tom, an asset manager from ABC fund. Tom earned a 45% annual return in the same year that John earned a 35% return. Tom argues that his 10% outperformance compared to John makes him a better portfolio manager. Based on absolute returns, this argument is true but lacks the risk context necessary for an informed comparison. Tom’s portfolio volatility is higher than John’s at 50%. Considering the risk free rate is 3.62%, can you calculate Tom’s Sharpe ratio based on the 3 pieces of information given?
-
-Here is the calculation for Tom’s Sharpe Ratio:
-
-Tom’s Sharpe = (45% return — 3.62% risk free rate) / 50% portfolio volatility = 0.83 Sharpe Ratio
-
-Comparing both investment managers shows that John’s Sharpe ratio is nearly twice Tom’s. Tom’s absolute portfolio return is higher at 45%, but his volatility is unacceptably high at 50%. Tom’s Sharpe Ratio of 0.83 shows that he is risking more than he is earning. Investors with no awareness of Sharpe Ratio may choose Tom instead of John because of Tom earning 45% instead of 35%. Those who consider volatility and Sharpe Ratio conclude that John’s fund is likely the more sustainable and profitable option over the long term. Hopefully this comparison of two imaginary portfolio managers helps gain an understanding of Sharpe Ratio and how to implement it effectively.
-
-The Sharpe Ratio’s greatness is sometimes overshadowed by the fact that it penalizes upside volatility. This happens naturally because standard deviation is calculated with positive data points and negative data points. Positive data points are months you make money and negative data points are months you lose money. Consider a theoretical portfolio that only has positively returning months with no consistency of the amount returned. Perhaps one month earned 50%, another month 5%, one month 75%, another month 15%, etc. Regardless of the volatile nature of returns, the portfolio makes money every month. Compared with a lower volatility portfolio that has down months, more consistent return amounts, and returns less overall, Sharpe Ratio may cause us to choose the portfolio that earns less with down months. Certainly, anyone would prefer the fictional portfolio of only money making months.
+Consider a theoretical portfolio that only has positively returning months with no consistency of the amount returned. Perhaps one month earned 50%, another month 5%, one month 75%, another month 15%, etc. Regardless of the volatile nature of returns, the portfolio makes money every month. Compared with a lower volatility portfolio that has down months, more consistent return amounts, and returns less overall, Sharpe Ratio may cause us to choose the portfolio that earns less with down months. Certainly, anyone would prefer the fictional portfolio of only money making months.
 
 This is why pairing Sharpe Ratio and Sortino Ratio is important. The Sortino Ratio measures downside portfolio volatility using downside deviation. Downside deviation is the volatility of negatively returning months without accounting for positively returning months. It’s ironic that downside deviation is a positive number despite its focus on downside. It’s calculated the same way as standard deviation using only negative data points. Speaking of similar calculations, the Sortino Ratio formula is the same as the Sharpe ratio formula except downside portfolio volatility replaces total portfolio volatility. Here is the formula for the Sortino Ratio:
 
