@@ -13,8 +13,6 @@
 
 ### Sharpe-, Sortino- and Calmar-Ratio
 
-# Risk Management in Native Token Investments: Beyond the Sharpe Ratio
-
 In the dynamic world of native tokens, which often experience huge volatility and liquidity might be moving between DEXes, risk management of strategy designs is crucial in this compelling yet volatile asset class. As the market matures, so too must our approaches to risk management and performance evaluation. While traditional finance has long relied on metrics like the Sharpe ratio to gauge risk-adjusted returns, the unique characteristics of the native token space demand a more nuanced perspective.
 
 The Sharpe ratio, developed by Nobel laureate William Sharpe, has been a cornerstone of portfolio analysis for decades. It measures an investment's excess return relative to its volatility, providing a standardized way to compare different assets or strategies. In essence, it answers the question: How much additional return are we getting for each unit of risk we're taking on?
