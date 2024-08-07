@@ -98,8 +98,6 @@ Portfolio 2 Calmar Ratio = (39.13% return — 5% risk free rate) / (Max drawdown
 
 This comparison shows that portfolio 2 outperformed portfolio 1 based on its Calmar Ratio. Portfolio 1 positively returned 2.54 times its maximum downside, while Portfolio 2 positively returned 2.81 times its maximum downside. Something to keep in mind is that Portfolio 2 had a larger drawdown despite outperformance in Calmar Ratio. While some prefer the Sortino Ratio and Calmar Ratio because they measure investment performance relative to downside, the Sharpe Ratio is still the standard performance metric used. When using downside ratios, always consider the downside on a standalone basis as well. A portfolio that has a 100% return and 50% maximum drawdown has a high Calmar Ratio, but a 50% drawdown is unacceptable for any period.
 
-Hopefully this deep dive into Sharpe Ratio, Sortino Ratio, and Calmar Ratio has been useful. To summarize, the Sharpe Ratio is an investment’s risk adjusted performance relative to its total volatility. Sortino Ratio is an investment’s risk adjusted performance relative to its downside volatility. Calmar Ratio is an investment’s risk adjusted performance relative to its maximum drawdown. All three ratios are key performance metrics for portfolio performance, so it’s important to know as an investor regardless of your investment style or total holdings. Next time you’re with your investment manager, ask them what their Sharpe Ratio is. You might be surprised at their answer, and they will most likely be surprised that you asked.
-
 ## Optimization and automation
 
 ### Trading strategies vs buy-and-hold
