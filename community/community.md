@@ -11,7 +11,29 @@ Most Cardano DEXes are organized as DAOs where native tokens held my members hav
 * Supply should not overwhelm demand: when team or investors are remunerated in protocol tokens, instead of earmarked funds or other equity, the selling pressure during periods of low token value may overwhelm buying demand and create sustained bear market from which it is hard to recover.
 
 * Dedicated smart contracts to sweep oversupply or sell into "pumps" are a good idea, if the mechanics are transparent but do not open free lunches to arbitrage bots or malificious actors. Technical solutions to increase liquidity and reduce volatility are hard, but one important area where DeFi needs to outperform TradFi.
-  
+
+At the time of writing, there are a lot of trading venues from large to tiny, highly specialized ones. To our best knowledge, the majority of Cardano native token liquidity in utility and governance tokens is carried out on the following trading venues:
+
+[Minswap](https://minswap.org/)
+
+[Sundae](https://sundae.fi/)
+
+[WingRiders](https://www.wingriders.com/)
+
+[MuesliSwap](https://muesliswap.com/)
+
+[Genius Yield](https://www.geniusyield.co/)
+
+[Splash](https://www.splash.trade/)
+
+[Axo](https://www.axo.trade/)
+
+[Dex Hunter](https://www.dexhunter.io/)
+
+[VyFinance](https://app.vyfi.io/dex)
+
+[CSWAP](https://www.cswap.info/)
+
 
 ## How to submit ideas and feedback
 
