@@ -201,19 +201,19 @@ With countless APIs and open source libraries to create trading bots, portfolio 
 
 There are some open source Pythonic or Python-friendly crypto trading libraries and frameworks can be considered for Cardano native tokens. We not recommend any of them, but have used Hummingbot ourselves. Please read the part about risks and pitfalls below thoroughly if you consider bots!!!
 
-* [ccxt](https://github.com/ccxt/ccxt) (CryptoCurrency eXchange Trading Library):
+* [ccxt](https://github.com/ccxt/ccxt) (CryptoCurrency eXchange Trading Library)
 
 Supports multiple exchanges
 Can be adapted for Cardano if the exchange supports it
 Provides a unified API for trading operations
 
-* [freqtrade](https://github.com/freqtrade/freqtrade):
+* [freqtrade](https://github.com/freqtrade/freqtrade)
 
 Open-source crypto trading bot framework
 Supports multiple exchanges and strategies
 Can be extended to work with Cardano native tokens
 
-* [Hummingbot](https://github.com/hummingbot/hummingbot):
+* [Hummingbot](https://github.com/hummingbot/hummingbot)
 
 Open-source market making bot
 Supports multiple exchanges and assets
@@ -240,7 +240,7 @@ There are several potential issues to consider:
 * Liquidity issues: For less popular Cardano native tokens, low liquidity can lead to slippage and difficulty executing trades
 * Smart contract risks: If interacting with DeFi protocols, smart contract vulnerabilities could lead to losses
 * Complexity of Cardano's eUTXO model: This can make certain types of automated trading more challenging compared to account-based blockchains
-* 
+  
 When considering automated trading for Cardano native tokens, it's crucial to thoroughly understand these risks and implement robust risk management strategies. Additionally, staying informed about Cardano's ecosystem developments and regulatory landscape is essential for successful and compliant automated trading.
 
 ### Trading strategies vs buy-and-hold
