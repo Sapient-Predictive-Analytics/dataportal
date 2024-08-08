@@ -27,9 +27,10 @@ The Sharpe ratio, developed by Nobel laureate William Sharpe, has been the gold 
 
 However, the crypto market's tendency towards extreme price swings and non-normal return distributions has led many analysts to question whether the Sharpe ratio alone is sufficient for evaluating native token investments. Enter alternative metrics like the Sortino and Calmar ratios, which may offer more appropriate benchmarks for judging performance in this unique asset class.
 
-![Saydip Sen](https://www.researchgate.net/profile/Jaydip-Sen-3/publication/364534078/figure/fig2/AS:11431281098448811@1668933610352/Portfolio-compositions-for-the-auto-sector-a-The-portfolio-with-the-maximum-Sharpe.jpg)
+![Sen](https://www.researchgate.net/profile/Jaydip-Sen-3/publication/364534078/figure/fig2/AS:11431281098448811@1668933610352/Portfolio-compositions-for-the-auto-sector-a-The-portfolio-with-the-maximum-Sharpe.jpg)
 
-*Maximimizing Sharpe-, Sortino- or Calmar-Ratio can result in vastly different portfolios of assets or strategies. This research by [Saydip Sen](https://www.researchgate.net/figure/Portfolio-compositions-for-the-auto-sector-a-The-portfolio-with-the-maximum-Sharpe_fig2_364534078) gives a great visual demonstration.*
+Maximimizing Sharpe-, Sortino- or Calmar-Ratio can result in vastly different portfolios of assets or strategies. This research by [Saydip Sen](https://www.researchgate.net/figure/Portfolio-compositions-for-the-auto-sector-a-The-portfolio-with-the-maximum-Sharpe_fig2_364534078) gives a great visual demonstration.
+
 
 As we delve deeper into these metrics and their applications, we'll explore how a more comprehensive toolkit for risk management can help investors navigate the exciting yet treacherous waters of native token investments. Whether you're a seasoned trader or a curious newcomer, understanding these concepts is crucial for developing robust trading strategies and making informed investment decisions in the blockchain era.
 
