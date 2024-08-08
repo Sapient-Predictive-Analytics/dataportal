@@ -65,7 +65,7 @@ def calculate_market_cap_weight_basket(dataframes, tokens, token_supplies):
     return market_cap_basket
 ~~~
 
-Over 2023, the "DEX basket" using market cap weight did indeed outperform the equally weighted one, as MIN and MILK tokens rallied but other protocols did not.
+Over 2023, the "DEX basket" using market cap weight did indeed outperform the equally weighted one, as MIN and MILK tokens rallied but other protocols did not. During bear market phases, equal weight may insulate the holder from some losses though - especially if they are corrections after rallies.
 
 ![DEXes](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/risk/DEX%20baskets.png)
 
