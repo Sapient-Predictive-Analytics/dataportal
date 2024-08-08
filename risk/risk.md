@@ -232,16 +232,17 @@ The main selling points of these solutions often include:
 **Risks and problems**
 
 There are several potential issues to consider:
-* Market volatility: Crypto markets are highly volatile, and bots may not adapt quickly to sudden changes
-* Technical failures: Bugs, network issues, or exchange API problems can lead to unexpected behavior
-* Lack of human judgment: Bots can't interpret news or broader market sentiment
+* Market volatility: Native token markets are highly volatile, and bots may not adapt quickly to sudden changes or "whiplash", i.e. get exploited by stop loss chasing players.
+* DEX risk: on Cardano there are a lot of DEXes and some trade very little volume in certain tokens. Consider aggregators or choose the most liquid DEX.
+* Technical failures: Bugs, network issues, or exchange API problems can lead to unexpected behavior especially with open source libraries that are not well maintained. Also, popular bot scripts could be well known with exploits already waiting for your deployment.
+* Lack of human judgment: Bots can't interpret news or broader market sentiment, or when they are parsing newsfeeds are prone to be misled by fake news
 * Over-optimization: Strategies that perform well in backtests may fail in live markets
 * Security risks: Bots require API access to your exchange account, creating potential security vulnerabilities
 * Liquidity issues: For less popular Cardano native tokens, low liquidity can lead to slippage and difficulty executing trades
 * Smart contract risks: If interacting with DeFi protocols, smart contract vulnerabilities could lead to losses
-* Complexity of Cardano's eUTXO model: This can make certain types of automated trading more challenging compared to account-based blockchains
+* Complexity of Cardano's eUTXO model: This can make certain types of automated trading more challenging compared to account-based blockchains (which are more common and probably behind some of the bot logic that went into the most popular scripts)
   
-When considering automated trading for Cardano native tokens, it's crucial to thoroughly understand these risks and implement robust risk management strategies. Additionally, staying informed about Cardano's ecosystem developments and regulatory landscape is essential for successful and compliant automated trading.
+When considering automated trading for native tokens, it is crucial to thoroughly understand these risks and implement robust risk management strategies.
 
 ### Trading strategies vs buy-and-hold
 
