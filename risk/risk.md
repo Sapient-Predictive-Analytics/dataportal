@@ -191,6 +191,57 @@ Portfolio 2 Calmar Ratio = (39.13% return — 5% risk free rate) / (Max drawdown
 This comparison shows that portfolio 2 outperformed portfolio 1 based on its Calmar Ratio. Portfolio 1 positively returned 2.54 times its maximum downside, while Portfolio 2 positively returned 2.81 times its maximum downside. Something to keep in mind is that Portfolio 2 had a larger drawdown despite outperformance in Calmar Ratio. While some prefer the Sortino Ratio and Calmar Ratio because they measure investment performance relative to downside, the Sharpe Ratio is still the standard performance metric used. When using downside ratios, always consider the downside on a standalone basis as well. A portfolio that has a 100% return and 50% maximum drawdown has a high Calmar Ratio, but a 50% drawdown is unacceptable for any period.
 
 ## Optimization and automation
+With countless APIs and open source libraries to create trading bots, portfolio analysis tools and so on, it is tempting to optimize and automate once we have found promising trading strategies. There are a lot of pitfalls though, so let's briefly discuss the possibilities and limitations. As a rule of thumb, any strategy we create needs to go through a certain evolution to avoid surprise losses.
+
+* Ideation: does the strategy make sense, is it based on a creative or at least credible hypothesis *WHY* it should make money?
+* Backtest: the strategy should have a positive but most importantly somewhat reliable historical performance when run through Backtrader or Zipline
+* Validation: the strategy needs to survive out-of-sample runs and have adequate statistical properties, ideally low correlation to other stategies we employ
+* Paper trading: we need to expose the strategy to a dry run of trading simulation in a real market environment, or if that is not possible trade with miniscule ADA
+* Monitoring: before we automate, and while we run automated bot trading, it is vital to have "kill switches" and/or human supervision in case something unexpected happens
+
+There are some open source Pythonic or Python-friendly crypto trading libraries and frameworks can be considered for Cardano native tokens. We not recommend any of them, but have used Hummingbot ourselves. Please read the part about risks and pitfalls below thoroughly if you consider bots!!!
+
+* [ccxt](https://github.com/ccxt/ccxt) (CryptoCurrency eXchange Trading Library):
+
+Supports multiple exchanges
+Can be adapted for Cardano if the exchange supports it
+Provides a unified API for trading operations
+
+* [freqtrade](https://github.com/freqtrade/freqtrade):
+
+Open-source crypto trading bot framework
+Supports multiple exchanges and strategies
+Can be extended to work with Cardano native tokens
+
+* [Hummingbot](https://github.com/hummingbot/hummingbot):
+
+Open-source market making bot
+Supports multiple exchanges and assets
+Community-driven development with potential for Cardano integration
+
+**Merits and marketing pitches**
+
+The main selling points of these solutions often include:
+* Automation: 24/7 trading without constant human intervention
+*  Speed: Faster execution of trades compared to manual trading
+* Emotion-free trading: Bots follow predefined strategies without emotional bias
+* Backtesting capabilities: Ability to test strategies on historical data
+* Customization: Flexibility to implement custom trading strategies
+* Multi-asset support: Ability to trade multiple cryptocurrencies simultaneously
+
+**Risks and problems**
+
+There are several potential issues to consider:
+* Market volatility: Crypto markets are highly volatile, and bots may not adapt quickly to sudden changes
+* Technical failures: Bugs, network issues, or exchange API problems can lead to unexpected behavior
+* Lack of human judgment: Bots can't interpret news or broader market sentiment
+* Over-optimization: Strategies that perform well in backtests may fail in live markets
+* Security risks: Bots require API access to your exchange account, creating potential security vulnerabilities
+* Liquidity issues: For less popular Cardano native tokens, low liquidity can lead to slippage and difficulty executing trades
+* Smart contract risks: If interacting with DeFi protocols, smart contract vulnerabilities could lead to losses
+* Complexity of Cardano's eUTXO model: This can make certain types of automated trading more challenging compared to account-based blockchains
+* 
+When considering automated trading for Cardano native tokens, it's crucial to thoroughly understand these risks and implement robust risk management strategies. Additionally, staying informed about Cardano's ecosystem developments and regulatory landscape is essential for successful and compliant automated trading.
 
 ### Trading strategies vs buy-and-hold
 
