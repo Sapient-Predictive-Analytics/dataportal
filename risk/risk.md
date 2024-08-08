@@ -31,9 +31,40 @@ def load_data(tokens):
 ~~~
 
 ### Equal-weighted basket
+Equal-weighted indices simply invest the same amount into each of its holdings. For a portfolio of ['MIN', 'MILK', 'GENS', 'SUNDAE', 'WRT'] this would allocate 20% of the total ADA investment into each token, regardless of their price or market cap.
+
+~~~
+def calculate_equal_weight_basket(dataframes, tokens):
+    combined_df = pd.concat([df['close'] for df in dataframes.values()], axis=1, keys=tokens)
+    equal_weight_basket = combined_df.mean(axis=1)
+    return equal_weight_basket
+~~~
 
 ### TVL-weighted basket
+A more common practice and used by most indices in the world like the S&P500 is to adjust the index or basket weight according to the market cap or float of the tokens, so if there are "ecosystem winners" we increase our share in them over time instead of cutting exposure to the dominant and usually most profitable protocols in favor of the low cap ones. Other metrics instead of market cap are possible, for example in the world of global commodities, the S&P GSCI measures commodity market performance through futures and is a production-weighted index taking into account not the investment amount but the value of production outputs.
 
+We need to rebalance a TVL-weighted basket in the case of additional supply or token burn events and here do this at the first of each month.
+
+~~~
+def calculate_market_cap_weight_basket(dataframes, tokens, token_supplies):
+    combined_df = pd.concat([df['close'] for df in dataframes.values()], axis=1, keys=tokens)
+    
+    market_cap_basket = pd.Series(index=combined_df.index, dtype=float)
+    
+    for month_start in combined_df.resample('MS').index:
+        month_end = month_start + pd.offsets.MonthEnd(0)
+        month_data = combined_df.loc[month_start:month_end]
+        
+        if month_start == month_data.index[0]:
+            market_caps = month_data.iloc[0] * token_supplies
+            weights = market_caps / market_caps.sum()
+        
+        month_basket = (month_data * weights).sum(axis=1)
+        market_cap_basket.loc[month_start:month_end] = month_basket
+    
+    return market_cap_basket
+~~~
+    
 ### Descriptive statistics
 
 ### Value at risk
