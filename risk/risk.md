@@ -105,13 +105,14 @@ def calculate_descriptive_stats(results, start_date='2023-01-01', end_date='2023
 
 Using our own data and previous DEX example, this gives us some useful numbers to further assess the choice between equal weight and TVL weight.
 Descriptive Statistics for 2023:
-                          Standard Deviation  Annualized Volatility  Annualized Return  Sharpe Ratio
+
+Name of the Basket         Standard Deviation  Annualized Volatility  Annualized Return  Sharpe Ratio
 Equal Weight Basket                   0.0545                 0.8647             1.1013        1.2159
 Market Cap Weight Basket              0.0809                 1.2843             2.9393        2.2497
 
 Correlation between baskets:
-                 Correlation
-Between Baskets       0.5859
+|Correlation|
+|Between Baskets|       0.5859
 
 ### Value at risk
 Value-at-risk [(VaR)](https://www.investopedia.com/terms/v/var.asp) is one of the most widely used risk measures, and a much debated one. Loved by practitioners for its intuitive appeal, it is widely discussed and criticized by many — mainly on theoretical grounds, with regard to its limited ability to capture what is called tail risk (more on this shortly). In words, VaR is a number denoted in fiat or ADA units indicating a loss (of a portfolio, a single position, etc.) that is not exceeded with some confidence level (probability) over a given period of time. Consider a stock position, worth 1 million ADA today, that has a VaR of 100,000 ADA at a confidence level of 99% over a time period of 30 days (one month). This VaR figure says that with a probability of 99% (i.e., in 99 out of 100 cases), the loss to be expected over a period of 30 days will not exceed 100,000 ADA. However, it does not say anything about the size of the loss once a loss beyond 50,000 USD occurs — i.e., if the maximum loss is 200,000 or 500,000 ADA what the probability of such a specific “higher than VaR loss” is. All it says is that there is a 1% probability that a loss of a minimum of 100,000 ADA or higher will occur. Value-at-Risk is by definition "skating where the puck was" as increased volatility will make the future look more risky and vice versa. If we had rebalanced our DEX portfolio at the end of 2022 to accound for the steep losses in our dataset, we would have entered the year 2023 with reduced risk limits and not been able to capture the rally (see section on TVL-weighted baskets). Many risk practitioners therefore now prefer some form of **stress test** for example exposing your portfolio to simulated price moves based on long-term statistical properties of its holdings and their [covariance](https://www.investopedia.com/terms/c/covariance.asp). 
