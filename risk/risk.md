@@ -42,13 +42,7 @@ Sharpe Ratio = (Portfolio return — Risk free rate) / Portfolio volatility
 
 The portfolio return is the percentage gain or loss in the portfolio. The risk free rate is the rate of return for investing in a 10 year US government bond. Portfolio volatility is measured by standard deviation, a statistical method for measuring data dispersion around the mean of a dataset. Portfolio standard deviation measures the variability of the portfolio. It also accounts for the variability of all assets and asset weightings, where weighting is the percentage of one asset’s value relative to the total portfolio value. Please note that each example from the reading uses annual numbers.
 
-Think of calculation and interpretation as two separate tasks, because focusing too heavily on calculation causes us to lose sight of the forest from the trees. The ideal portfolio Sharpe Ratio has a higher risk adjusted return than its volatility. That’s why a Sharpe of 1 is considered acceptable, while a Sharpe of 1.5 or higher is preferrable. A Sharpe Ratio below 1 means the portfolio’s risk adjusted return is less than its volatility, and the investor is risking more than they are earning. No investor prefers this scenario if there is a better alternative. John from XYZ firm has demonstrated exceptional returns and risk management based on his Sharpe Ratio of 1.57. Let’s review the numerical interpretation of Sharpe ratios before moving on:
-
-Sharpe ratio > 1; the investment manager is earning more than their risk
-
-Sharpe ratio = 1; the investment manager is earning the same as their risk
-
-Sharpe Ratio < 1; the investment manager is earning less than their risk
+Think of calculation and interpretation as two separate tasks, because focusing too heavily on calculation causes us to lose sight of the forest from the trees. The ideal portfolio Sharpe Ratio has a higher risk adjusted return than its volatility. That’s why a Sharpe of 1 is considered acceptable, while a Sharpe of 1.5 or higher is preferrable. A Sharpe Ratio below 1 means the portfolio’s risk adjusted return is less than its volatility, and the investor is risking more than they are earning. No investor prefers this scenario if there is a better alternative.
 
 Consider a theoretical portfolio that only has positively returning months with no consistency of the amount returned. Perhaps one month earned 50%, another month 5%, one month 75%, another month 15%, etc. Regardless of the volatile nature of returns, the portfolio makes money every month. Compared with a lower volatility portfolio that has down months, more consistent return amounts, and returns less overall, Sharpe Ratio may cause us to choose the portfolio that earns less with down months. Certainly, anyone would prefer the fictional portfolio of only money making months. Put in technical terms, the Sharpe ratio does not distinguish between upside and downside volatility. The risk measure inherent in the Sharpe ratio, i.e. the standard deviation of asset returns, does not reflect the way most HODLers or traders perceive risk. Mostly, we care about loss, not volatility.
 
@@ -57,12 +51,6 @@ This is why pairing Sharpe Ratio and Sortino Ratio is important. The Sortino Rat
 Sortino Ratio = (Portfolio return — Risk Free Rate) / Downside portfolio volatility
 
 In some cases, the Sortino Ratio is a better performance metric than the Sharpe Ratio. This is due to the reasons discussed earlier in the fictional portfolio of only money making months. Even if the only positive returns are all over the place causing a higher volatility, this isn’t bad because the portfolio is never down. Sortino Ratio is interpreted similarly to Sharpe Ratio, and here is how to interpret it:
-
-Sortino Ratio > 1; the portfolio is earning more than its downside volatility
-
-Sortino Ratio = 1; the portfolio is earning the same as its downside volatility
-
-Sortino Ratio < 1; the portfolio is earning less than its downside volatility.
 
 Moving away from unrealistic examples like the dream portfolio of only money making months, let’s look at a more realistic example of Sortino Ratio compared with Sharpe Ratio:
 
@@ -89,12 +77,6 @@ One thing all investors can agree on is their dislike of large losses. The Calma
 Calmar Ratio = (Portfolio Return — Risk free rate) / (Maximum portfolio drawdown)
 
 In similar irony to downside deviation, maximum portfolio drawdown is stated as a positive number. Interpreting the Calmar Ratio is similar to interpreting the Sharpe Ratio and Sortino Ratio. Here is how to interpret it:
-
-Calmar Ratio > 1; Total portfolio return is greater than its worst performing period
-
-Calmar Ratio = 1; Total portfolio return is the same as its worst performing period
-
-Calmar Ratio < 1; Total portfolio return is less than its worst performing period
 
 Now that we know how to interpret Calmar Ratio, let’s calculate it for the portfolios used in the Sortino Ratio calculations. Here’s the same table of monthly returns from before:
 
