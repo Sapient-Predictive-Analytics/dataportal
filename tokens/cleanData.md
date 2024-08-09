@@ -316,3 +316,12 @@ analyze_csv('WRT.csv')
 ***
 
 ## Data Cleaning Remedies
+For an asset as volatile and illiquid as Cardano native tokens, especially those of smaller protocols or excluded from DEX aggregation, automatically removing or smooting outliers is likely counterproductive. Imagine we have a 100% jump on one day and replace it with a forward fill until the token reverts back to its initial level. All trading opportunities that may be very significant are then removed as well! If we are lucky, the data problems are obvious from the above report and we can easily remove them manually. If for example out of 1000 days of WMT history, I have 9.xx values instead of 0.xx values, this is obviously an API- or "fat finger" issue. An AI assistant may also help if we have more than a handful or they are not obvious to spot when plotting the data. 
+
+However, a few simple Python scripts can help. Some ideas:
+
+* Remove days with no trading or NaN (not a number) data
+* Ensure date format is consistent and ordered
+* Ensure OHLC data is indeed allocated to the right column, i.e. high is the highest or equal, low is the lowest or equal etc.
+
+The most powerful remedies are usually those that involve the trading strategy level. For example, trusting volume in native tokens for trading signals is often a bad idea, as DEX aggregation and over the counter trading can obscure what is really going on. Also, as most DEXes trade 24/7, relying on candlesticks or there being any significant difference between today's close and tomorrow's open are probably not real opportunities. 
