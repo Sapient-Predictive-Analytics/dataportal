@@ -4,6 +4,8 @@ Most of the time, we receive time series data from a DEX's API, some aggregator 
 
 We use a simple Python script you can find in this folder [**dataScanner.py**](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/tokens/dataScanner.py) to scan data and produce a "quality report". This flags potentially problematic date format, outlier detection using the [IQR method](https://medium.com/@pp1222001/outlier-detection-and-removal-using-the-iqr-method-6fab2954315d) and descriptive statistics. It also reports on the existence of "not a number". The report also has a list at the bottom of the exact dates potential outliers occur, so we can manually check and correct the data in Excel, or run scripts to remedy problems if there are more than a few.
 
+***
+
 ### The Data Quality Analysis Report Program
 
 ~~~
@@ -127,7 +129,11 @@ def analyze_csv(file_path):
 analyze_csv('WRT.csv')
 ~~~
 
+***
+
 ### The Output of the Report (Example: Wing Rider Token)
+
+***
 
 ## Data Quality Analysis Report
 
@@ -305,64 +311,8 @@ analyze_csv('WRT.csv')
 
 | 2022-07-15 | 230131.956095 |
 
-| 2022-07-16 | 318244.557675 |
+(... 31 more rows ...)
 
-| 2022-07-18 | 276674.505929 |
+***
 
-| 2022-07-19 | 309142.855962 |
-
-| 2022-07-20 | 309897.647501 |
-
-| 2022-08-02 | 2242306.788919 |
-
-| 2022-08-03 | 348952.452614 |
-
-| 2022-08-04 | 538998.746054 |
-
-| 2022-08-05 | 471780.682193 |
-
-| 2022-08-06 | 267063.317610 |
-
-| 2022-08-07 | 447451.557337 |
-
-| 2022-08-08 | 296590.621448 |
-
-| 2022-08-29 | 321378.673497 |
-
-| 2022-10-18 | 502497.222794 |
-
-| 2022-11-19 | 369904.856623 |
-
-| 2023-01-15 | 277680.490664 |
-
-| 2023-02-07 | 341334.072291 |
-
-| 2023-03-06 | 540165.936507 |
-
-| 2023-03-07 | 246730.293446 |
-
-| 2023-03-10 | 728016.096256 |
-
-| 2023-03-11 | 264064.254538 |
-
-| 2023-03-13 | 1318562.081617 |
-
-| 2023-03-17 | 240910.668753 |
-
-| 2023-05-15 | 217538.908200 |
-
-| 2023-05-30 | 251309.882424 |
-
-| 2023-06-10 | 335716.766235 |
-
-| 2023-07-01 | 245662.267588 |
-
-| 2023-07-09 | 236956.319829 |
-
-| 2023-07-11 | 333531.334721 |
-
-| 2023-07-20 | 390996.644612 |
-
-| 2023-07-24 | 242518.437323 |
-
-### Data Cleaning Remedies
+## Data Cleaning Remedies
