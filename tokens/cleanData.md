@@ -329,7 +329,7 @@ However, a few simple Python scripts can help. Some ideas:
 
 The most powerful remedies are usually those that involve the trading strategy level. For example, trusting volume in native tokens for trading signals is often a bad idea, as DEX aggregation and over the counter trading can obscure what is really going on. Also, as most DEXes trade 24/7, relying on candlesticks or there being any significant difference between today's close and tomorrow's open are probably not real opportunities. 
 
-The function below covers some of these suggestions and can be found in **csvCleaning.py**
+The function below covers some of these suggestions and can be found in [**csvCleaning.py**](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/tokens/csvCleaning.py)
 
 ~~~
 def clean_and_enhance_data(file_path):
