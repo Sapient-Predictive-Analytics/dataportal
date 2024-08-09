@@ -213,7 +213,8 @@ analyze_csv('WRT.csv')
 **Annualized Volatility:** 58.77%
 
 
-![Price and Volume History](price_volume_history.png)
+![Price and Volume History](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/tokens/price_volume_history.png)
+
 
 ### Detailed Outlier Report
 
