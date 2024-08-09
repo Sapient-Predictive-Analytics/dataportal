@@ -130,6 +130,7 @@ analyze_csv('WRT.csv')
 ### The Output of the Report (Example: Wing Rider Token)
 
 **Data Quality Analysis Report**
+
 **===========================**
 
 Column Names:
@@ -227,3 +228,5 @@ Extreme outliers (3 * IQR method):
   2022-07-16 00:00:00: 1.393708
   2022-07-17 00:00:00: 1.363342
   2022-07-18 00:00:00: 1.284046
+
+### Data Cleaning Remedies
