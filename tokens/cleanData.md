@@ -320,6 +320,9 @@ For an asset as volatile and illiquid as Cardano native tokens, especially those
 
 However, a few simple Python scripts can help. Some ideas:
 
+* Normalize volume: for example, we can use 10 bins for volume ranges instead of absolute tokens
+* Calculate ADA volume instead of token numbers for volume
+* Use log of token price instead of absolute ADA price if the period we analyze saw huge rise of fall in the level
 * Remove days with no trading or NaN (not a number) data
 * Ensure date format is consistent and ordered
 * Ensure OHLC data is indeed allocated to the right column, i.e. high is the highest or equal, low is the lowest or equal etc.
