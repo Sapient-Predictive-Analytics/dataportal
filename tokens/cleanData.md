@@ -148,19 +148,29 @@ close: 0.00%
 volume: 0.00%
 
 High and Low values for numeric columns:
+
 open:
+
   High: 1.489598
   Low: 0.050753
+  
 high:
+
   High: 1.834970
   Low: 0.050753
+  
 low:
+
   High: 1.394460
   Low: 0.050716
+  
 close:
+
   High: 1.489598
   Low: 0.050734
+  
 volume:
+
   High: 2242306.788919
   Low: 83.840115
 
