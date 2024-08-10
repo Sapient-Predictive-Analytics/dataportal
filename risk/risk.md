@@ -255,4 +255,61 @@ When considering automated trading for native tokens, it is crucial to thoroughl
 ### Basis risk
 Basis risk is a term that originates in the futures markets. As futures contracts only require the full principal payment versus delivery of the underlying asset at some specified future date, interest rates that can be earned on the funds earmarked for purchase or other factors like staking rewards, dividends, voting power, storage costs or supply imbalances and infrastructure imperfections can cause large differences in the price gap between asset (for example ADA in your wallet that has the right to vote, be staked etc) and the futures contract price. Differences in the difference between the hedge and the asset to be hedged are called [BASIS](https://moneyterms.co.uk/basis-risk/), and this basis can fluctuate causing unwanted changes in profit and loss. What the hedger actually wants is a perfect fit. If you hedge ADA with Bitcoin futures, you have a huge basis risk, if you hedge Apple stock with Apple single stock futures, a much smaller risk. Bear in mind that this relationship can change in the future, and perfectly safe "baskets" that are used by everyone and everyday can suddenly stop to work as hedges. There are a lot of academic papers how this and that basket of cryptoassets "perfectly" correlates with an unhedgeable ETF or coin price, but not being aware of the risk of breakdown in this relationship can cause unnecessary and/or large [losses](https://www.e-education.psu.edu/ebf301/node/571).
 
-### Model risk, jumps and "rug-pulls"
+### "Rug-pulls"
+
+**Rug pulls** are a significant concern in the crypto space, and Cardano native tokens despite the overall high level of integrity of the ecosystem are no exception. Understanding rug pulls for the investor and in our portfolio construction is crucial as it can skew performance and creates many idiosyncracies for native token portfolios that have no parallel in traditional asset classes except maybe penny stocks.
+
+What is a Rug Pull?
+A rug pull is a type of scam in the cryptocurrency world where the developers of a project suddenly withdraw all liquidity or funds, effectively "pulling the rug" out from under investors. This typically results in the token's value plummeting to near zero, leaving investors with worthless assets and no recourse. A slow burn liquidation among a cascade of soothing or bullish news is also a possibility, we may call this "salami rug pull" borrowed from the term "salami crash" where a stock market sell off occurs over several sell-off events instead of a big Black Monday style breakdown.
+
+Rug pulls traditionally occur in decentralized finance (DeFi) projects, particularly those involving newly launched tokens on decentralized exchanges or peer to peer. These projects often lure investors with alleged technical novely and innovation, a large team, huge social media followers (initially mostly fake accounts, of course) but they are designed from the start to defraud.
+
+**How Can a Token Investor Spot Hallmarks or Tell-Tale Signs?**
+Spotting a rug pull can be challenging, especially because the projects often appear legitimate at first. However, there are several red flags that investors can look out for:
+
+* Anonymous or Unverifiable Team:
+Projects where the team members are anonymous or have unverifiable identities should be approached with caution. Legitimate projects usually have transparent teams with verifiable backgrounds.
+
+* No Audit or Poor Quality Audits:
+Reputable protocols usually undergo audits by well-known security firms. A lack of audit or an audit by an unknown or dubious firm is a red flag.
+
+* Large fully diluted market cap
+Tokens with an extremely high supply can be manipulated easily. Additionally, if a small group holds a large percentage of the tokens, they can easily dump them, causing the price to crash.
+
+* No Locked Liquidity:
+
+In a rug pull, developers withdraw liquidity from the DEX. Legitimate projects often lock liquidity for a specified period to assure investors that the team can't withdraw it immediately.
+
+* Unrealistic Returns:
+
+Promises of extremely high returns, especially if they seem too good to be true, are often a sign of a scam. Always be skeptical of projects that guarantee high returns with little to no risk.
+
+* Sudden Changes in Project Structure or Tokenomics:
+Unexpected changes in token distribution, supply, or governance structure can indicate that the project is gearing up for a rug pull.
+
+* No Clear Use Case or Roadmap:
+A project without a clear use case, roadmap, or development plan is likely to be a cash grab. Always look for projects that have a well-defined purpose and a detailed plan for future growth.
+
+* Suspicious Marketing Tactics:
+Over-reliance on hype, especially if the project is being pushed by influencers with no technical knowledge, can be a red flag. Be cautious of projects that spend more on marketing than on development.
+
+**How Does the Risk of Rug Pulls Affect the Construction of Crypto Portfolios?**
+The risk of rug pulls significantly impacts how investors should approach building a crypto portfolio:
+
+Diversification:
+
+Given the high risk of rug pulls, diversification is crucial. By spreading investments across multiple projects, especially established ones, investors can mitigate the risk of any single project collapsing.
+Due Diligence:
+
+Investors should conduct thorough research on any project before investing. This includes reading whitepapers, analyzing the development team, checking for audits, and understanding the project's use case and tokenomics.
+Focus on Established Projects:
+
+While new projects can offer high returns, they also carry higher risks. A balanced portfolio should include established cryptocurrencies like Bitcoin or Ethereum, which are less susceptible to rug pulls.
+Liquidity Considerations:
+
+Investing in tokens with locked liquidity or those on reputable exchanges reduces the risk of rug pulls. Consider avoiding projects that are only available on smaller, less regulated platforms.
+Risk Management:
+
+Allocate only a small portion of the portfolio to high-risk, high-reward projects. This way, even if one project fails, it won't devastate the entire portfolio.
+
+Maybe most importantly, **hope is not a viable investment strategy**. If things go badly, for example your token of choice woefully underperforms peers or has a few shar jumps followed by long periods of liquiditation, it is often better to exit pre-emptively instead of "giving the benefit of the doubt". Real breakthroughs are generally not made overnight, and especially developing on Cardano and building sustainable, loyal community takes time. Sell first, ask questions later. And if you were wrong to exit, you can always get back in. Some successful protocols have gone 20x or 100x over several years, so be in it for the long run and the big score, while cutting losers and possible rug pulls.
