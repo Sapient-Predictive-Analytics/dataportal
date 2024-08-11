@@ -12,17 +12,17 @@ Apart from diverisification and portfolio construction, we also look at on-chain
 
 **([2](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/risk/risk.md#portfolio-construction-and-analysis)) Portfolio construction and analysis**
 
-**(3) Descriptive statistics**
+**([3](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/risk/risk.md#descriptive-statistics)) Descriptive statistics**
 
-**(4) Value at risk**
+**([4](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/risk/risk.md#value-at-risk)) Value at risk**
 
-**(5) Sharpe-, Sortino- and Calmar-Ratio**
+**([5](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/risk/risk.md#sharpe--sortino--and-calmar-ratio)) Sharpe-, Sortino- and Calmar-Ratio**
 
-**(6) Optimization and automation**
+**([6](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/risk/risk.md#optimization-and-automation)) Optimization and automation**
 
-**(7) "Rug-pulls"**
+**([7](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/risk/risk.md#rug-pulls)) "Rug-pulls"**
 
-**(8) Other factors**
+**([8](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/risk/risk.md#other-factors)) Other factors**
 
 ***
 
