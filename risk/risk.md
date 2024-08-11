@@ -8,7 +8,7 @@ Apart from diverisification and portfolio construction, we also look at on-chain
 
 **([1](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/risk/risk.md#risk-factors)) Risk factors**
 
-**(2) Portfolio construction and analysis**
+**([2](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/risk/risk.md#portfolio-construction-and-analysis)) Portfolio construction and analysis**
 
 
 ## Risk factors
