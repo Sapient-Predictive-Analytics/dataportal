@@ -67,6 +67,6 @@ The API has been deployed on *https://gwsl86ibha.execute-api.us-east-1.amazonaws
 
 ![SapientGateway](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/api/api_gateway.jpg)
 
-Right now, token data for the four provided tickers WMT, AGIX, SNEK and IAG is available and this will be expanded to all 12 tokens and custom trade signals later in the project.
+Token data for 16 native token tickers AGIX, BOOK, COPI, GENS, IAG, INDY, LENFI, MELD, MIN, MILK, NEWM, NTX, SNEK, SUNDAE, WMT, WRT is available and custom signals will be added once the portal goes live and as requested by the community.
 
 ![Uploads](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/api/Screenshot%20(201).png)
