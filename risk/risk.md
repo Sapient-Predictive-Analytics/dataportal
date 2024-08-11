@@ -10,6 +10,18 @@ Apart from diverisification and portfolio construction, we also look at on-chain
 
 **([2](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/risk/risk.md#portfolio-construction-and-analysis)) Portfolio construction and analysis**
 
+**(3) Descriptive statistics**
+
+**(4) Value at risk**
+
+**(5) Sharpe-, Sortino- and Calmar-Ratio**
+
+**(6) Optimization and automation**
+
+**(7) "Rug-pulls"**
+
+**(8) Other factors**
+
 
 ## Risk factors
 Recently, risk factors have become the preferred way to look at investment portfolios instead of more traditional measures like alpha and beta derived from [Modern Portfolio Theory](https://www.investopedia.com/terms/m/modernportfoliotheory.asp) and the Capital Asset Pricing Model [CAPM](https://www.investopedia.com/terms/c/capm.asp). This alternative framework for estimating input is to boil each asset down to the underlying determinants, or **factors**, that drive the risk and returns of the asset. Such factors are traditionally large cap / small cap, growth / value and so on but for the native token universe could be completely different. We discussed ADA positive / ADA negative in the [Casestudy](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/casestudy/overview.md). While some native tokens amplify the ADA move, i.e. rise in a bull market, others are more likely to hold a stable USD value and fall if ADA goes up because the token holders look for a certain fiat return. Other factors could be the geography (Americas, Asia, Africa etc), theme (impact, metaverse, DeFi) or correlation to gold, network congestion or other factors that could even be "memes".  If we understand how the factors influence returns, and we understand the factors, we will be able to construct more robust portfolios. Generally, factor analysis should yield better results than traditional finance measures like beta which have never been conclusively proven even for the equity universe they were intended for. This is of course subject of heated debate, but we agree with the general [thinking](https://johnrothe.com/the-problem-with-modern-portfolio-theory/) behind the doubts.
@@ -77,7 +89,7 @@ Over 2023, the "DEX basket" using market cap weight did indeed outperform the eq
 ![DEXes](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/risk/DEX%20baskets.png)
 
 
-### Descriptive statistics
+## Descriptive statistics
 Some descriptive statistics like volatility, correlation and Sharpe ratio can easily be calculated on the fly, but most types of existential risks especially for native tokens require deeper thought about the utility, supply/demand and integrity of the protocol, loyality of the user base, ability to innovate and so on.
 
 Here, we look at returns, correlation, volatility and Sharpe ratio of our baskets of DEX tokens.
@@ -125,10 +137,11 @@ Correlation between baskets:
 | --- | --- |
 | Between Baskets | 0.5859 |
 
-### Value at risk
+## Value at risk
 Value-at-risk [(VaR)](https://www.investopedia.com/terms/v/var.asp) is one of the most widely used risk measures, and a much debated one. Loved by practitioners for its intuitive appeal, it is widely discussed and criticized by many — mainly on theoretical grounds, with regard to its limited ability to capture what is called tail risk (more on this shortly). In words, VaR is a number denoted in fiat or ADA units indicating a loss (of a portfolio, a single position, etc.) that is not exceeded with some confidence level (probability) over a given period of time. Consider a stock position, worth 1 million ADA today, that has a VaR of 100,000 ADA at a confidence level of 99% over a time period of 30 days (one month). This VaR figure says that with a probability of 99% (i.e., in 99 out of 100 cases), the loss to be expected over a period of 30 days will not exceed 100,000 ADA. However, it does not say anything about the size of the loss once a loss beyond 50,000 USD occurs — i.e., if the maximum loss is 200,000 or 500,000 ADA what the probability of such a specific “higher than VaR loss” is. All it says is that there is a 1% probability that a loss of a minimum of 100,000 ADA or higher will occur. Value-at-Risk is by definition "skating where the puck was" as increased volatility will make the future look more risky and vice versa. If we had rebalanced our DEX portfolio at the end of 2022 to accound for the steep losses in our dataset, we would have entered the year 2023 with reduced risk limits and not been able to capture the rally (see section on TVL-weighted baskets). Many risk practitioners therefore now prefer some form of **stress test** for example exposing your portfolio to simulated price moves based on long-term statistical properties of its holdings and their [covariance](https://www.investopedia.com/terms/c/covariance.asp). 
 
-### Sharpe-, Sortino- and Calmar-Ratio
+
+## Sharpe-, Sortino- and Calmar-Ratio
 
 In the dynamic world of native tokens, which often experience huge volatility and liquidity might be moving between DEXes, risk management of strategy designs is crucial in this compelling yet volatile asset class. As the market matures, so too must our approaches to risk management and performance evaluation. While traditional finance has long relied on metrics like the Sharpe ratio to gauge risk-adjusted returns, the unique characteristics of the native token space demand a more nuanced perspective.
 
@@ -197,6 +210,7 @@ Portfolio 2 Calmar Ratio = (39.13% return — 5% risk free rate) / (Max drawdown
 
 This comparison shows that portfolio 2 outperformed portfolio 1 based on its Calmar Ratio. Portfolio 1 positively returned 2.54 times its maximum downside, while Portfolio 2 positively returned 2.81 times its maximum downside. Something to keep in mind is that Portfolio 2 had a larger drawdown despite outperformance in Calmar Ratio. While some prefer the Sortino Ratio and Calmar Ratio because they measure investment performance relative to downside, the Sharpe Ratio is still the standard performance metric used. When using downside ratios, always consider the downside on a standalone basis as well. A portfolio that has a 100% return and 50% maximum drawdown has a high Calmar Ratio, but a 50% drawdown is unacceptable for any period.
 
+
 ## Optimization and automation
 With countless APIs and open source libraries to create trading bots, portfolio analysis tools and so on, it is tempting to optimize and automate once we have found promising trading strategies. There are a lot of pitfalls though, so let's briefly discuss the possibilities and limitations. As a rule of thumb, any strategy we create needs to go through a certain evolution to avoid surprise losses.
 
@@ -251,18 +265,8 @@ There are several potential issues to consider:
   
 When considering automated trading for native tokens, it is crucial to thoroughly understand these risks and implement robust risk management strategies.
 
-### Trading strategies vs buy-and-hold
 
-### Biases and overfitting
-
-### Oracle-risk
-
-## Other factors
-
-### Basis risk
-Basis risk is a term that originates in the futures markets. As futures contracts only require the full principal payment versus delivery of the underlying asset at some specified future date, interest rates that can be earned on the funds earmarked for purchase or other factors like staking rewards, dividends, voting power, storage costs or supply imbalances and infrastructure imperfections can cause large differences in the price gap between asset (for example ADA in your wallet that has the right to vote, be staked etc) and the futures contract price. Differences in the difference between the hedge and the asset to be hedged are called [BASIS](https://moneyterms.co.uk/basis-risk/), and this basis can fluctuate causing unwanted changes in profit and loss. What the hedger actually wants is a perfect fit. If you hedge ADA with Bitcoin futures, you have a huge basis risk, if you hedge Apple stock with Apple single stock futures, a much smaller risk. Bear in mind that this relationship can change in the future, and perfectly safe "baskets" that are used by everyone and everyday can suddenly stop to work as hedges. There are a lot of academic papers how this and that basket of cryptoassets "perfectly" correlates with an unhedgeable ETF or coin price, but not being aware of the risk of breakdown in this relationship can cause unnecessary and/or large [losses](https://www.e-education.psu.edu/ebf301/node/571).
-
-### "Rug-pulls"
+## "Rug-pulls"
 
 **Rug pulls** are a significant concern in the crypto space, and Cardano native tokens despite the overall high level of integrity of the ecosystem are no exception. Understanding rug pulls for the investor and in our portfolio construction is crucial as it can skew performance and creates many idiosyncracies for native token portfolios that have no parallel in traditional asset classes except maybe penny stocks.
 
@@ -320,3 +324,15 @@ Risk Management:
 Allocate only a small portion of the portfolio to high-risk, high-reward projects. This way, even if one project fails, it won't devastate the entire portfolio.
 
 Maybe most importantly, **hope is not a viable investment strategy**. If things go badly, for example your token of choice woefully underperforms peers or has a few shar jumps followed by long periods of liquiditation, it is often better to exit pre-emptively instead of "giving the benefit of the doubt". Real breakthroughs are generally not made overnight, and especially developing on Cardano and building sustainable, loyal community takes time. Sell first, ask questions later. And if you were wrong to exit, you can always get back in. Some successful protocols have gone 20x or 100x over several years, so be in it for the long run and the big score, while cutting losers and possible rug pulls.
+
+
+## Other factors
+
+### Trading strategies vs buy-and-hold
+
+### Biases and overfitting
+
+### Oracle-risk
+
+### Basis risk
+Basis risk is a term that originates in the futures markets. As futures contracts only require the full principal payment versus delivery of the underlying asset at some specified future date, interest rates that can be earned on the funds earmarked for purchase or other factors like staking rewards, dividends, voting power, storage costs or supply imbalances and infrastructure imperfections can cause large differences in the price gap between asset (for example ADA in your wallet that has the right to vote, be staked etc) and the futures contract price. Differences in the difference between the hedge and the asset to be hedged are called [BASIS](https://moneyterms.co.uk/basis-risk/), and this basis can fluctuate causing unwanted changes in profit and loss. What the hedger actually wants is a perfect fit. If you hedge ADA with Bitcoin futures, you have a huge basis risk, if you hedge Apple stock with Apple single stock futures, a much smaller risk. Bear in mind that this relationship can change in the future, and perfectly safe "baskets" that are used by everyone and everyday can suddenly stop to work as hedges. There are a lot of academic papers how this and that basket of cryptoassets "perfectly" correlates with an unhedgeable ETF or coin price, but not being aware of the risk of breakdown in this relationship can cause unnecessary and/or large [losses](https://www.e-education.psu.edu/ebf301/node/571).
