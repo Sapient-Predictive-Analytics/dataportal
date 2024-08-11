@@ -4,8 +4,12 @@ The chapter on our [HeatmapTool](https://github.com/Sapient-Predictive-Analytics
 
 Apart from diverisification and portfolio construction, we also look at on-chain and off-chain analytics, descriptive statistics and a popular measure called **Value-at-Risk** to analyze our investment holding and invest "the right amount" - as opposed to amounts that are not meaningful to our wealth or potentially ruinous. Finally, we will explain and also cover improvements on the popular **Sharpe ratio** - i.e. how good is our trading strategy in delivering return for the risk taken.
 
-##Contents of this section
+## Contents of this section
+
 **(1) Risk factors**
+
+**(2) Portfolio construction and analysis**
+
 
 ## Risk factors
 Recently, risk factors have become the preferred way to look at investment portfolios instead of more traditional measures like alpha and beta derived from [Modern Portfolio Theory](https://www.investopedia.com/terms/m/modernportfoliotheory.asp) and the Capital Asset Pricing Model [CAPM](https://www.investopedia.com/terms/c/capm.asp). This alternative framework for estimating input is to boil each asset down to the underlying determinants, or **factors**, that drive the risk and returns of the asset. Such factors are traditionally large cap / small cap, growth / value and so on but for the native token universe could be completely different. We discussed ADA positive / ADA negative in the [Casestudy](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/casestudy/overview.md). While some native tokens amplify the ADA move, i.e. rise in a bull market, others are more likely to hold a stable USD value and fall if ADA goes up because the token holders look for a certain fiat return. Other factors could be the geography (Americas, Asia, Africa etc), theme (impact, metaverse, DeFi) or correlation to gold, network congestion or other factors that could even be "memes".  If we understand how the factors influence returns, and we understand the factors, we will be able to construct more robust portfolios. Generally, factor analysis should yield better results than traditional finance measures like beta which have never been conclusively proven even for the equity universe they were intended for. This is of course subject of heated debate, but we agree with the general [thinking](https://johnrothe.com/the-problem-with-modern-portfolio-theory/) behind the doubts.
