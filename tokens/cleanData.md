@@ -405,3 +405,24 @@ def clean_and_enhance_data(file_path):
 # Call the function with our CSV file path
 cleaned_df = clean_and_enhance_data('WRT.csv')
 ~~~
+
+### Pandas as a go-to tool for data cleaning
+The Pandas library provides powerful functions like groupby and apply to create new improved columns, manipulate timezones and datetime objects to fit our needs, or aggregate data and create signals. The Groupby object is a very useful data preparation step to avoid resource-consuming iteration and work database-like with our CSV data. The first parameter to .groupby() can accept several different arguments:
+
+* A column or list of columns
+* A dict or pandas Series
+* A NumPy array or pandas Index, or an array-like iterable of these
+  
+We can take advantage of the latter to group by for example bins of average scores etc.
+
+A more detailed breakdown of how groupby works:
+
+* **Split**: The data is divided into groups based on some criteria. This criteria can be one or more columns in your DataFrame. When we call groupby on a DataFrame, we specify which column(s) we want to group by. This divides the DataFrame into multiple groups based on unique values in the specified column(s).
+
+* **Apply**: A function is applied to each group independently. This function can be a built-in aggregation function (such as sum, mean, count, etc.), a custom function, or even a combination of multiple functions. We apply various functions to each group. Common functions include aggregation: calculating a single value for each group, such as mean, sum, count, etc. Transformation: returning an object that's the same size as the group, typically used for normalization or other element-wise operations. Filtration: Returning subsets of the original object based on some group-wise criteria.
+
+* **Combine**: The results of the function applications are combined into a new DataFrame or Series. The results of the applied functions are combined into a new DataFrame or Series, which can be used for further analysis or visualization.
+
+
+**Risk of over-automation**
+While it is good to use scripts and APIs for work with large datasets and choose the right instrument, time horizon and approach for our trading strategies, good data cleaning should involve some human element. This adds a "sanity check" element and also familiarizes ourselves with the dataset.
