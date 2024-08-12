@@ -16,24 +16,41 @@ Updated the trade summary table to include the fee for each trade.
 
 Here's a breakdown of the main changes:
 
-Strategy Parameters:
+**Strategy Parameters**
 
 fast_period: The period for the fast moving average (default: 10 days)
 slow_period: The period for the slow moving average (default: 30 days)
 trading_fee: The percentage fee for each trade (default: 0.1%)
 
-Trading Logic:
+**Trading Logic**
 
 The strategy buys when the fast MA crosses above the slow MA.
 It sells when the fast MA crosses below the slow MA.
 When not in a position, it stays out of the market.
 
-Fee Calculation:
+**Fee Calculation**
 
 The trading fee is now factored into each trade.
 The available cash for buying is reduced by the fee amount.
 The fee is logged for each trade in the trade summary.
 
-Visualization:
+**Visualization**
 
-The plot now shows both the fast and slow moving averages along with the close price.s early. Trading strategies can be very complex and incorporate multi-period signals and indicators. From the SMA-signal, the next level of complexity is an SMA-crossover. 
+The plot now shows both the fast and slow moving averages along with the close price.s early. Trading strategies can be very complex and incorporate multi-period signals and indicators.
+
+In real life, we probably have some sophisticated idea that involves parsing X for the comments by exposed personalities about our tokens or on-chain statistics and so on. Traditional technical patterns that only reference past price action are not very likely to provide a long term source of edge. However, for the purpose of this tutorial, they are much easier to demonstrate the open source tools on and can be refined very easily. First, we need to define the strategy in unambiguous terms that can be tested and verified. This could look something like this:
+
+`
+Trading Strategy:
+1. Entry: Enter a long position when either a Dragonfly Doji or a Bullish Hammer candlestick pattern is detected in a downtrend.
+2. Exit: Exit the position if any of the following conditions are met:
+   a) A Bearish Hanging Man pattern occurs after entry
+   b) The closing price falls below 80% of the entry price (20% stop loss)
+   c) The position value doubles (100% take profit)
+3. Cooldown: Do not enter a new position within 7 days of the last entry.
+4. Position Sizing: Invest all available cash in each trade, accounting for trading fees.
+`
+
+Spoiler: the strategy described does not make any money across our native tokens investable universe. However, it is a good way to discuss code refinement to allow for fees and complex entry and exit logic.
+
+![Dragonfly](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/backtesting/DragonflyCandles.png)
