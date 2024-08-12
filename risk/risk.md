@@ -179,43 +179,11 @@ This is why pairing Sharpe Ratio and Sortino Ratio is important. The Sortino Rat
 
 Sortino Ratio = (Portfolio return — Risk Free Rate) / Downside portfolio volatility
 
-In some cases, the Sortino Ratio is a better performance metric than the Sharpe Ratio. This is due to the reasons discussed earlier in the fictional portfolio of only money making months. Even if the only positive returns are all over the place causing a higher volatility, this isn’t bad because the portfolio is never down. Sortino Ratio is interpreted similarly to Sharpe Ratio, and here is how to interpret it:
+In some cases, the Sortino Ratio is a better performance metric than the Sharpe Ratio. This is due to the reasons discussed earlier in the fictional portfolio of only money making months. Even if the only positive returns are all over the place causing a higher volatility, this isn’t bad because the portfolio is never down.
 
-Moving away from unrealistic examples like the dream portfolio of only money making months, let’s look at a more realistic example of Sortino Ratio compared with Sharpe Ratio:
-
-Portfolio 1 had a return of 30.39% and volatility of 20.84%. Its downside deviation is 11.88%. Here is the Sharpe Ratio and Sortino Ratio calculations for portfolio 1:
-
-Portfolio 1 Sharpe Ratio = (30.39% return — 5% risk free rate) / 20.84% portfolio volatility = 1.22 Sharpe Ratio
-
-Portfolio 1 Sortino Ratio = (30.39% return — 5% risk free rate) / 11.88% downside volatility = 2.14 Sortino Ratio
-
-Portfolio 2 had a return of 39.13% and volatility of 37.54%. Given the downside deviation is 9.32%, let’s calculate the Sharpe and Sortino Ratios for portfolio 2:
-
-Portfolio 2 Sharpe Ratio = (39.13% return — 5% risk free rate) / 37.54% portfolio volatility = 0.91 Sharpe Ratio
-
-Portfolio 2 Sortino Ratio = (39.13% return — 5% risk free rate) / 9.32% downside volatility = 3.66 Sortino Ratio
-
-The monthly returns for portfolio 1 and portfolio 2 show a comparable number of down months. They also show a similar volatility profile. Digging a bit deeper, portfolio 1’s down months included returns of -1%, -1%, -5%, -10%, and -2%. Portfolio 2’s down months included returns of -1%, -1%, -7.5%, -5%, and -1%. Although not identical, these returns are quite similar.
-
-Based on Sharpe Ratio alone, portfolio 1 is better than portfolio 2 because it is returning more per unit of risk. However, Sortino Ratio analysis leads us to a different conclusion. The only reasons for the higher volatility in portfolio 2 are February and July, which were big up months that returned 15% and 35% respectively. Furthermore, portfolio 2’s downside volatility is more controlled than portfolio 1. Considering that portfolio 2 has a higher Sortino Ratio than portfolio 1, portfolio 2 is the better option using Sortino Ratio.
-
-These results conflict with one another and this happens from time to time. Similar to most things in life, there is no one size fits all rulebook for investing, portfolio management, and trading. There probably are those rulebooks, but the people who made them are selling the dream of a shortcut to success so that they can make a buck. Sharpe Ratio analysis should be paired with Sortino Ratio analysis to gain a more thorough understanding of the overall performance in question. Discretion is always a factor, and everyone’s risk tolerance is different based on their personal lives, experiences, and goals.
-
-One thing all investors can agree on is their dislike of large losses. The Calmar Ratio is a stricter measure of downside than the Sortino Ratio. Calmar Ratio measures the portfolio’s risk adjusted return compared to its worst performing month or time frame. The only difference in calculation for the Calmar Ratio is the denominator. Here is the Calmar Ratio formula:
+One thing all investors can probably agree on is their dislike of large losses. The Calmar Ratio is a stricter measure of downside than the Sortino Ratio. Calmar Ratio measures the portfolio’s risk adjusted return compared to its worst performing month or time frame. The only difference in calculation for the Calmar Ratio is the denominator. Here is the Calmar Ratio formula:
 
 Calmar Ratio = (Portfolio Return — Risk free rate) / (Maximum portfolio drawdown)
-
-In similar irony to downside deviation, maximum portfolio drawdown is stated as a positive number. Interpreting the Calmar Ratio is similar to interpreting the Sharpe Ratio and Sortino Ratio. Here is how to interpret it:
-
-Now that we know how to interpret Calmar Ratio, let’s calculate it for the portfolios used in the Sortino Ratio calculations. Here’s the same table of monthly returns from before:
-
-Portfolio 1’s maximum drawdown is -10% and happened in September. Portfolio 2’s maximum drawdown is -12.13% and happened over the two month spand of September and October. Considering a portfolio 1 return of 30.39%, portfolio 2 return of 39.13%, and risk free rate of 5%, here are the Calmar Ratio calculations for each portfolio:
-
-Portfolio 1 Calmar Ratio = (30.39% return — 5% risk free rate) / (Max drawdown -10%) = 2.54 Calmar Ratio
-
-Portfolio 2 Calmar Ratio = (39.13% return — 5% risk free rate) / (Max drawdown -12.13%) = 2.81 Calmar Ratio
-
-This comparison shows that portfolio 2 outperformed portfolio 1 based on its Calmar Ratio. Portfolio 1 positively returned 2.54 times its maximum downside, while Portfolio 2 positively returned 2.81 times its maximum downside. Something to keep in mind is that Portfolio 2 had a larger drawdown despite outperformance in Calmar Ratio. While some prefer the Sortino Ratio and Calmar Ratio because they measure investment performance relative to downside, the Sharpe Ratio is still the standard performance metric used. When using downside ratios, always consider the downside on a standalone basis as well. A portfolio that has a 100% return and 50% maximum drawdown has a high Calmar Ratio, but a 50% drawdown is unacceptable for any period.
 
 
 ## Optimization and automation
