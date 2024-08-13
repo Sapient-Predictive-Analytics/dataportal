@@ -2,10 +2,10 @@
 
 So far, we have bought WMT token whenever the price was above the SMA20 line, and stayed out of the market if it wasn't. This has historically worked really well, and the heatmap looks promising insofar as changing the average period slightly does not dramatically alter trading results, a sure hallmark of spurious data mining results.
 
-However, we need to up our game to trade other tokens, deploy money in the real world where fees and slippage can eat away profits, and take into account other risk factors we may encounter. This section and the separate chapter on [Risk](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/risk/risk.md) will cover those aspect.
+However, we need to up our game to trade other tokens, deploy money in the real world where fees and **slippage** can eat away profits, and take into account other risk factors we may encounter. This section and the separate chapter on [Risk](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/risk/risk.md) will cover those aspect.
 
 ## Gradually refining our approach
-It is important to move gradually with your programs to spot inconsistencies, biases and bugs. First, we need to add trading fees to realistically penalize strategies that enter and exit the market a lot and take advantage of small opportunities that are unlikely to survive poor liquidity or minimum batcher fees.
+It is important to move gradually with your programs to spot inconsistencies, biases and bugs. First, we need to add trading fees to realistically penalize strategies that enter and exit the market a lot and take advantage of small opportunities that are unlikely to survive **poor liquidity** or minimum **batcher fees**.
 
 Implemented a moving average crossover strategy using two Simple Moving Averages (SMA).
 Added a trading fee parameter (set to 0.1% by default).
