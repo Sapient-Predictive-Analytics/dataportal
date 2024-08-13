@@ -7,6 +7,8 @@ However, we need to up our game to trade other tokens, deploy money in the real 
 ## Gradually refining our approach
 It is important to move gradually with your programs to spot inconsistencies, biases and bugs. First, we need to add trading fees to realistically penalize strategies that enter and exit the market a lot and take advantage of small opportunities that are unlikely to survive **poor liquidity** or minimum **batcher fees**.
 
+Right now, the Preprod [WingRider DEX](https://app.preprod.wingriders.com/swap) testnet assumes for an order of 10,000 ADA that 36 ADA fees will be paid and the price impact is 1.101%. So first of all, we adjust our equity to be a portfolio of 10,000 ADA that is far more realistically deployable in the native tokens universe than the previous 100,000 simulation. The total cost of getting into the position is 1.37% Traders who are used to paying 0.1 to 0.2% on Kraken or Binance exchanges for ADA, ETH or BTC may find this outrageous, but if you are trading a native token of a smaller project these currently trade only a few 1000 ADA a day on the more active DEXes. Surely, 1% slippage / market impact is a fairly optimistic assumption that only applies to the most liquid tokens like WMT, AGIX or SNEK.
+
 Implemented a moving average crossover strategy using two Simple Moving Averages (SMA).
 Added a trading fee parameter (set to 0.1% by default).
 Modified the trading logic to enter when the fast MA crosses above the slow MA, and exit when it crosses below.
