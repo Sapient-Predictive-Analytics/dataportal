@@ -4,8 +4,8 @@ So far, we have bought WMT token whenever the price was above the SMA20 line, an
 
 However, we need to up our game to trade other tokens, deploy money in the real world where fees and slippage can eat away profits, and take into account other risk factors we may encounter. This section and the separate chapter on [Risk](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/risk/risk.md) will cover those aspect.
 
-### Gradually refining our approach
-It is important to move gradually with your programs to spot inconsistencies, biases and bugI've made several key changes to implement a more complex trading strategy:
+## Gradually refining our approach
+It is important to move gradually with your programs to spot inconsistencies, biases and bugs. First, we need to add trading fees to realistically penalize strategies that enter and exit the market a lot and take advantage of small opportunities that are unlikely to survive poor liquidity or minimum batcher fees.
 
 Implemented a moving average crossover strategy using two Simple Moving Averages (SMA).
 Added a trading fee parameter (set to 0.1% by default).
