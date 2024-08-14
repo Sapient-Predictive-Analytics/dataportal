@@ -45,7 +45,6 @@ class BullishHammerIndicator(bt.Indicator):
         self.lines.bullish_hammer[0] = int(is_hammer and is_downtrend and close > open)
 ~~~
 
-
 **Trading Logic**
 Combining these classes is also easy. In the functions of the main program, we simply scan for all signals or write logic that makes use of them.
 
@@ -64,8 +63,20 @@ def flag_all_patterns(data):
     return dragonfly_dojis, bullish_hammers, bearish_hanging_men
 ~~~
 
+## Ideas for strategy improvement
+As next steps, we could further refine the strategy by 
+
+* Implementing more sophisticated position sizing
+  
+* Adding risk management features like stop-loss or take-profit orders
+  
+* Incorporating additional indicators or fundamental data, or introducing "regimes"
+  
+* Implementing a more complex exit strategy like trailing stops 
+
 
 **Visualization**
+
 
 **Optimization**
 
