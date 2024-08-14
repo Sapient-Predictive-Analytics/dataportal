@@ -47,14 +47,27 @@ class BullishHammerIndicator(bt.Indicator):
 
 
 **Trading Logic**
+Combining these classes is also easy. In the functions of the main program, we simply scan for all signals or write logic that makes use of them.
 
+~~~
+def flag_all_patterns(data):
+    cerebro = bt.Cerebro()
+    cerebro.adddata(bt.feeds.PandasData(dataname=data))
+    cerebro.addstrategy(AdvancedDualEntryStrategy)
+    results = cerebro.run()
+    strategy = results[0]
 
-
-**Fee Calculation**
+    dragonfly_dojis = [data.index[i] for i, v in enumerate(strategy.dragonfly_doji.array) if v]
+    bullish_hammers = [data.index[i] for i, v in enumerate(strategy.bullish_hammer.array) if v]
+    bearish_hanging_men = [data.index[i] for i, v in enumerate(strategy.bearish_hanging_man.array) if v]
+    
+    return dragonfly_dojis, bullish_hammers, bearish_hanging_men
+~~~
 
 
 **Visualization**
 
+**Optimization**
 
 In real life, we probably have some sophisticated idea that involves parsing X for the comments by exposed personalities about our tokens or on-chain statistics and so on. Traditional technical patterns that only reference past price action are not very likely to provide a long term source of edge. However, for the purpose of this tutorial, they are much easier to demonstrate the open source tools on and can be refined very easily. First, we need to define the strategy in unambiguous terms that can be tested and verified. This could look something like this:
 
