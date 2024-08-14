@@ -9,8 +9,41 @@ It is important to move gradually with your programs to spot inconsistencies, bi
 
 Right now, the Preprod [WingRider DEX](https://app.preprod.wingriders.com/swap) testnet assumes for an order of 10,000 ADA that 36 ADA fees will be paid and the price impact is 1.101%. So first of all, we adjust our equity to be a portfolio of 10,000 ADA that is far more realistically deployable in the native tokens universe than the previous 100,000 simulation. The total cost of getting into the position is 1.37% Traders who are used to paying 0.1 to 0.2% on Kraken or Binance exchanges for ADA, ETH or BTC may find this outrageous, but if you are trading a native token of a smaller project these currently trade only a few 1000 ADA a day on the more active DEXes. Surely, 1% slippage / market impact is a fairly optimistic assumption that only applies to the most liquid tokens like WMT, AGIX or SNEK.
 
+To realize this basic improvement, we follow the following simple steps to our earlier Backtrader programs:
+* adding a *trading_fee* parameter to the *MACrossoverStrategy* class
+* modifying the *next* method (signal logic) to account for fees when calculating the maximum buy size
+* adding fee calculation and logging in the *notify_order* method (or function if using zipline)
+* including a *total_fees* attribute to track the total fees paid
+* updating the *run_backtest* function to subtract the total fees from the final return calculation and adding a "Fee" column to the trade summary table
 
 **Strategy Parameters**
+It is fairly straight-forward to add complexity to a Backtrader program. This is done via adding strategy classes, and a large amount of classes can work together as the next method iterated over our historical data and the memory usage for each step is small.
+
+For simplicity's sake, let us assume that we believe in the predictive power of candlestick patterns. This is unlikely to work for token data, as there are no end of day breaks that surely had a crucial psychological importance in rice markets when the indicator was conceived. Adjusting token data for illiquid "night" period and allowing gaps and differences between open and close prices could restore this predictive power, but that is up to the reader to pursue. We use candlesticks as they are clearly verifiable and well known patterns that have varying levels of complexity and can be combined and optimized easily - a perfect learning example for our Backtrader tool.
+
+~~~
+class BullishHammerIndicator(bt.Indicator):
+    lines = ('bullish_hammer',)
+    params = (('body_ratio', 0.3), ('wick_ratio', 2.0), ('trend_period', 14))
+
+    def __init__(self):
+        self.addminperiod(self.p.trend_period)
+        self.trend = bt.indicators.ExponentialMovingAverage(self.data.close, period=self.p.trend_period)
+
+    def next(self):
+        open, high, low, close = self.data.open[0], self.data.high[0], self.data.low[0], self.data.close[0]
+        body = abs(close - open)
+        wick = high - max(open, close)
+        tail = min(open, close) - low
+        
+        is_hammer = (body <= (high - low) * self.p.body_ratio and
+                     tail >= body * self.p.wick_ratio and
+                     wick <= body * 0.1)
+        
+        is_downtrend = close < self.trend[0] and self.trend[0] < self.trend[-1]
+        
+        self.lines.bullish_hammer[0] = int(is_hammer and is_downtrend and close > open)
+~~~
 
 
 **Trading Logic**
