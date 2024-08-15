@@ -88,7 +88,9 @@ for trade in strategy.trade_log:
             ax1.scatter(trade['date'], trade['price'], color='r', marker='v', s=100)
 ~~~
 
-to show the signals defined in Backtrader classes as markers on the plot. ![Plot](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/backtesting/matplotlibSignals.jpg)
+to show the signals defined in Backtrader classes as markers on the plot. 
+
+![Plot](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/backtesting/matplotlibSignals.jpg)
 
 
 **Optimization**
