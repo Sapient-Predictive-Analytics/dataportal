@@ -76,6 +76,19 @@ As next steps, we could further refine the strategy by
 
 
 **Visualization**
+Matplotlib allows for looping in your plot function, so trading signals can easily be inserted into the chart of the native to show entry and exit signals and other indicators. This is a great way to avoid "black box" situations where we have a highly profitable trading signal but do not fully understand why - so the risk of **spurious results**, **calculation error**, **biases** or **unrealistic assumptions** is unacceptable. 
+
+The code for this could look something  like this:
+
+~~~
+for trade in strategy.trade_log:
+        if trade['type'] == 'BUY':
+            ax1.scatter(trade['date'], trade['price'], color='g', marker='^', s=100)
+        else:  # SELL
+            ax1.scatter(trade['date'], trade['price'], color='r', marker='v', s=100)
+~~~
+
+to show the signals defined in Backtrader classes as markers on the plot. ![Plot](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/backtesting/matplotlibSignals.jpg)
 
 
 **Optimization**
