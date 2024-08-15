@@ -107,7 +107,8 @@ Trading Strategy:
 3. Cooldown: Do not enter a new position within 7 days of the last entry.
 4. Position Sizing: Invest all available cash in each trade, accounting for trading fees.
 `
+An example for the Backtrader [code](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/backtesting/advanced_dragonfly_backtest.py.py) is included in this section of the repository.
 
-Spoiler: the strategy described does not make any money across our native tokens investable universe. However, it is a good way to discuss code refinement to allow for fees and complex entry and exit logic.
+Spoiler: the strategy described does not make any money across our native tokens investable universe. However, it is a good way to discuss code refinement to allow for fees and complex entry and exit logic. As mentioned earlier, [candlesticks](https://www.ig.com/en/trading-strategies/16-candlestick-patterns-every-trader-should-know-180615) originally described the psychological patterns of traders in clearly defined, short daily sessions for rice trading in Japan. Around-the-clock crypto markets dominated by AMMs and token vesting or burning schedules are very different in nature. Still, the ability of candles signals to go from extremely common and simple patterns to rare and complex ones while being easily quantifiable is great for developing your program logic.
 
 ![Dragonfly](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/backtesting/DragonflyCandles.png)
