@@ -30,6 +30,8 @@ To get the last 14 trading days' data:
 python3 api_call.py ticker.csv fortnight
 ~~~
 
+This fortnight method is especially useful if you periodically update your signals manually, and achieves the same as print(df.tail(14)) in your local pandas environment but with our updated, cleaned cloud data.
+
 To get **custom strategy data**, get the ticker of the strategy from our community or social media pages for example instead of WMT.csv for World Mobile Token, use S81.csv for strategy #81 if you are aware that the signal exists.
 
 
