@@ -9,8 +9,13 @@ Fungible Tokens at launch: **AGIX**, **BOOK**, **COPI**, **GENS**, **IAG**, **IN
 
 
 ***
+
+**Any feedback, request for new features, tickers, custom signals or plots can be submitted via our Google Form**
+[Fill out the form](https://forms.gle/H1fMqNMmyYhaVepV6)
+
 ![x](http://i.imgur.com/tXSoThF.png)
-[Feedback / Request feature on X](https://twitter.com/SapientSwarm)
+[Or provide Feedback / Request feature on X](https://twitter.com/SapientSwarm)
+
 ***
 
 Please contact us or contribute to this repository if you have ideas, requests or directions how to grow quantitative trading and better market making and risk management for Cardano's native tokens investable assets universe.
