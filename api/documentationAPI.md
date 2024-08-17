@@ -6,12 +6,13 @@
   
 * Make sure to replace "your_api_key_here" with **your actual API key** in the script.
 
-Run the script in your linux terminal with desired updating period:
+Run the script in your linux terminal with desired updating period.
+Replace **ticker** with any of the available tickers AGIX, BOOK, COPI, GENS, IAG, INDY, LENFI, MELD, MIN, MILK, NEWM, NTX, SNEK, SUNDAE, WMT, WRT
 
 
 To get all data: 
 ~~~
-python3 api_call.py ticker.csv
+python3 api-call-script.py ticker.csv
 ~~~
 
 To get the last day's data: 
