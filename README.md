@@ -12,6 +12,7 @@ Fungible Tokens at launch: **AGIX**, **BOOK**, **COPI**, **GENS**, **IAG**, **IN
 
 **Any feedback, request for new features, tickers, custom signals or plots can be submitted via our Google Form**
 
+![Google](https://img.shields.io/badge/google-4285F4?style=for-the-badge&logo=google&logoColor=white)
 [Fill out the form](https://forms.gle/H1fMqNMmyYhaVepV6)
 
 ![x](http://i.imgur.com/tXSoThF.png)
