@@ -12,23 +12,29 @@ API_ENDPOINT = BASE_URL + RESOURCE_PATH
 # API Key (replace with your actual API key)
 API_KEY = "your_api_key_here"
 
-def get_csv_data(file_name):
+def get_csv_data(file_name, period='all'):
     print(f"Attempting to access file: {file_name}")
+    print(f"Period: {period}")
     print(f"Using API endpoint: {API_ENDPOINT}")
     
     headers = {
         "x-api-key": API_KEY
     }
     
+    params = {
+        'file': file_name,
+        'period': period
+    }
+    
     try:
-        response = requests.get(API_ENDPOINT, params={'file': file_name}, headers=headers, timeout=10)
+        response = requests.get(API_ENDPOINT, params=params, headers=headers, timeout=10)
         
         print(f"Request URL: {response.url}")
         print(f"Response status code: {response.status_code}")
         print(f"Response headers: {json.dumps(dict(response.headers), indent=2)}")
         
         if response.status_code == 200:
-            print("Success! Here's the beginning of the response:")
+            print("Success! Here's the response:")
             print(response.text)
         elif response.status_code == 403:
             print("Error: Invalid or missing API key")
@@ -47,9 +53,12 @@ def get_csv_data(file_name):
         print(f"An error occurred while making the request: {e}")
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python3 api_call.py <file_name>")
+    if len(sys.argv) < 2 or len(sys.argv) > 3:
+        print("Usage: python3 api_call.py <file_name> [period]")
+        print("Period can be 'day', 'week', 'fortnight', or 'all' (default)")
         sys.exit(1)
     
     file_name = sys.argv[1]
-    get_csv_data(file_name)
+    period = sys.argv[2] if len(sys.argv) == 3 else 'all'
+    
+    get_csv_data(file_name, period)
