@@ -2,11 +2,11 @@
 
 ### Usage
 
-* Download api-call-script.py from this folder of the repository to your environment
+* Download [api-call-script.py](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/api/api-call-script.py) from this folder of the repository to your environment
   
 * Make sure to replace "your_api_key_here" with **your actual API key** in the script.
 
-Run the script with desired updating period:
+Run the script in your linux terminal with desired updating period:
 
 
 To get all data: 
