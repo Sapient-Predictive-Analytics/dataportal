@@ -4,7 +4,7 @@
 
 * Download api-call-script.py from this folder of the repository to your environment
   
-* Make sure to replace "your_api_key_here" with your actual API key in the script.
+* Make sure to replace "your_api_key_here" with **your actual API key** in the script.
 
 Run the script with desired updating period:
 
