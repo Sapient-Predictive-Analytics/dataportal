@@ -29,7 +29,7 @@ To get the last 14 trading days' data:
 python3 api_call.py ticker.csv fortnight
 ~~~
 
-To get custom strategy data, get the ticker of the strategy from our community or social media pages for example instead of WMT.csv for World Mobile Token, use S81.csv for strategy #81 if you are aware that the signal exists.
+To get **custom strategy data**, get the ticker of the strategy from our community or social media pages for example instead of WMT.csv for World Mobile Token, use S81.csv for strategy #81 if you are aware that the signal exists.
 
 
 ### Motivation
