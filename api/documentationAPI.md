@@ -1,5 +1,38 @@
 ## CSV - API for Native Token Data / Ingest Data Feeds into Zipline and Backtrader Programs
 
+### Usage
+
+* Download api-call-script.py from this folder of the repository to your environment
+  
+* Make sure to replace "your_api_key_here" with your actual API key in the script.
+
+Run the script with desired updating period:
+
+
+To get all data: 
+~~~
+python3 api_call.py ticker.csv
+~~~
+
+To get the last day's data: 
+~~~
+python3 api_call.py ticker.csv day
+~~~
+
+To get the last 7 trading days' data: 
+~~~
+python3 api_call.py ticker.csv week
+~~~
+
+To get the last 14 trading days' data: 
+~~~
+python3 api_call.py ticker.csv fortnight
+~~~
+
+To get custom strategy data, get the ticker of the strategy from our community or social media pages for example instead of WMT.csv for World Mobile Token, use S81.csv for strategy #81 if you are aware that the signal exists.
+
+
+### Motivation
 As part of the Dataportal we like to provide a simple, free and lightweight API to allow users to download selected, cleaned Cardano native token time series data stored in the cloud. The first step is a minimal viable solution using open-source tools and a major cloud provider like AWS or Google with later optimization and redundancies possible.
 
 This consists of initially four components:
