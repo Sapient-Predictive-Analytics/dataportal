@@ -1,6 +1,6 @@
 # dataportal
 Public repository for Sapient's Cardano Native Tokens data portal.
-Fungible Tokens at launch: **AGIX**, **BOOK**, **COPI**, **FLDT**, **GENS**, **HUNT**, **IAG**, **INDY**, **LENFI**, **MELD**, **MIN**, **MILK**, **NEWM**, **NTX**, **SNEK**, **SUNDAE**, **WMT**, **WRT**
+Fungible Tokens at launch: **AGIX**, **BOOK**, **COPI**, **EMP**, **FLDT**, **GENS**, **HUNT**, **IAG**, **INDY**, **LENFI**, **MELD**, **MIN**, **MILK**, **NEWM**, **NMKR**, **NTX**, **SNEK**, **SUNDAE**, **WMT**, **WRT**
 
 ![WMT Backtest](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/backtesting/WMT_SMA20_full_signals.png)
 
