@@ -286,3 +286,17 @@ print(f'Total Return: {total_return:.2%}')
 ~~~
 
 ![Swarm](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/HeatmapTool/sns_barr.jpg)
+
+**Output of the backtest using heatmap optimization**
+Best performing parameter combination:
+Wick Ratio: 0.5
+Tail Ratio: 1.5
+Holding Period: 3 days
+
+Detailed Results for Best Parameters:
+Initial Portfolio Value: $100000.00
+Final Portfolio Value: $124282.27
+Total Profit/Loss: $24282.27
+Total Return: 24.28%
+
+![6plot](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/HeatmapTool/WMT_6_3dheatmap.png)
