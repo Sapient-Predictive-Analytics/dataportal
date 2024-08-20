@@ -1,4 +1,4 @@
-# dataportal
+# Native Token Dataportal
 Public repository for Sapient's Cardano Native Tokens data portal.
 Fungible Tokens at launch: **AGIX**, **BOOK**, **COPI**, **EMP**, **FLDT**, **GENS**, **HUNT**, **IAG**, **INDY**, **LENFI**, **MELD**, **MIN**, **MILK**, **NEWM**, **NMKR**, **NTX**, **SNEK**, **SUNDAE**, **WMT**, **WRT**
 
