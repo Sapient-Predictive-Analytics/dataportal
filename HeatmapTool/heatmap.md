@@ -299,4 +299,4 @@ Final Portfolio Value: $124282.27
 Total Profit/Loss: $24282.27
 Total Return: 24.28%
 
-![6plot](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/HeatmapTool/WMT_6_3dheatmap.png)
+![6plot](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/HeatmapTool/Complex4Dheatmap.png)
