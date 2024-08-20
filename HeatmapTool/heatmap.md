@@ -290,7 +290,14 @@ print(f'Total Return: {total_return:.2%}')
 
 ## Advanced Optimization
 
+Earlier when moving from SMA to MA-Crossover and later in [Advanced Backtesting](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/backtesting/backtesting2.md) we discussed adding levels of complexity to Backtrader or Zipline backtesting programs and using visualization to tweak parameters. A word of caution: always run checks how many signals actually make up your results and ideally iterate over the datasets for several comparable native tokens. If a single trade with 100% return falls into an optimization comparison where only 2 or 3 signals exist for the time series in the first place, this result has virtually no value going forward. We like to stress this again: the feature optimization is supposed to give the trader confidence that a signal is solid and the surface are above zero and broad - meaning no matter whether we tweak the signal generation, it will always likely result in profitable trades. Otherwise it is very, very like that our supposedly winning trading strategy is based on spurious relationships and the small size of our sample.
+
+Having said that, let's continue with the example of candlestick signals and specifically the ![bullish Hammer pattern](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/HeatmapTool/bullishHammer.png).
+
+Defining this signal depends on several facotrs, i.e. the relative length of candle wick and tail, the decline required to happen before. It also depends how long we hold the position afterwards or if we stop loss at the low of the hammer or some other level. For simplicity's sake, we ran a backtest with Backtrader on WMT token finding all bullish hammers and looking at the return, and then tweaking 3 possible factors for the best combination of profitability. As before, this kind of analysis should be done with meaningful metrics, wick and body ratio of candles probably not being among them, but as far as the code and compute required is concerned, it is a great example to showcase feature tweaking.
+
 **Output of the backtest using heatmap optimization**
+
 Best performing parameter combination:
 Wick Ratio: 0.5
 Tail Ratio: 1.5
