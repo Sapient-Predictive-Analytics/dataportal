@@ -2,6 +2,8 @@
 Public repository for Sapient's Cardano Native Tokens data portal.
 Fungible Tokens at launch: **AGIX**, **BOOK**, **COPI**, **EMP**, **FLDT**, **GENS**, **HUNT**, **IAG**, **INDY**, **LENFI**, **MELD**, **MIN**, **MILK**, **NEWM**, **NMKR**, **NTX**, **SNEK**, **SUNDAE**, **WMT**, **WRT**
 
+Our website and repository are constantly evolving and will launch in September as part of our [Catalyst Project](https://cardano.ideascale.com/c/idea/114247). New sections and updated data and charts are constantly being added and community feedback incorporated. A full tutorial, how-to-use flow and video will be provided upon launch, in the meantime you can find all section's information in their respective Markdown (.md) files with links to code, charts and data. Please also use the feedback form, Twitter or Github issues/discussion to get in touch, request API key, contribute content or request features or tickers. **Thank you and hope you enjoy the content!**
+
 ![WMT Backtest](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/backtesting/WMT_SMA20_full_signals.png)
 
 
@@ -28,6 +30,22 @@ Please contact us or contribute to this repository if you have ideas, requests o
 [How the first 10 Native Tokens to be featured were chosen](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/rationale.md)
 
 ***
+
+## Flow of the Dataportal and recommended reading
+
+(1) If you are new to Python data analysis, backtesting, trading or native tokens please start with our simple World Mobile Token casestudy.
+(2) Next or if you have some background, proceed to the Backtesting section to get started with Backtrader and Python plotting.
+(3) Refer to our section on the Heatmap feature next for advanced plotting and optimization of trading strategies.
+(4) More feature-rich or complex backtests are dealt with in the continued Backtesting section.
+(5) This is continued in the Advanced Heatmap optimization study.
+(6) Don't miss the chapter on Risk Management before you consider actually trading native tokens!
+(7) Learn about data cleaning and outlier detection here.
+(8) Finally, download or ingest native tokens data using our API.
+* Get in touch, share ideas, reach out.
+* This website and repo are NOT FINANCIAL ADVICE!
+
+***
+
 ## Casestudy Milestone 1
 Simple data manipulation on clean WMT (Minswap) data
 
