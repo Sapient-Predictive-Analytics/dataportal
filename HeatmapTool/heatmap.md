@@ -287,6 +287,9 @@ print(f'Total Return: {total_return:.2%}')
 
 ![Swarm](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/HeatmapTool/sns_barr.jpg)
 
+
+## Advanced Optimization
+
 **Output of the backtest using heatmap optimization**
 Best performing parameter combination:
 Wick Ratio: 0.5
