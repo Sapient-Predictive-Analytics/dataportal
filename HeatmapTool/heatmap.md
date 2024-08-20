@@ -300,3 +300,6 @@ Total Profit/Loss: $24282.27
 Total Return: 24.28%
 
 ![6plot](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/HeatmapTool/Complex4Dheatmap.png)
+
+
+This program can be further optimized if we compare versus average holding period return instead of plotting absolute returns, especially if token has strong uptrend or downtrend. Otherwise comparison of the holding period length will be misleading or contain little added information.
