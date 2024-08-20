@@ -33,25 +33,25 @@ Please contact us or contribute to this repository if you have ideas, requests o
 
 ## Flow of the Dataportal and recommended reading
 
-(1) If you are new to Python data analysis, backtesting, trading or native tokens please start with our simple World Mobile Token [casestudy](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/casestudy/overview.md).
+**(1)** If you are new to Python data analysis, backtesting, trading or native tokens please start with our simple **World Mobile Token [Casestudy](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/casestudy/overview.md).**
 
-(2) Next or if you have some background, proceed to the [Backtesting](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/backtesting/backtesting.md) section to get started with Backtrader and Python plotting.
+**(2)** Next or if you have some background, proceed to the **[Backtesting](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/backtesting/backtesting.md)** section to get started with Backtrader and Python plotting.
 
-(3) Refer to our section on the [Heatmap](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/HeatmapTool/heatmap.md) feature next for advanced plotting and optimization of trading strategies.
+**(3)** Refer to our section on the **[Heatmap](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/HeatmapTool/heatmap.md)** feature next for advanced plotting and optimization of trading strategies.
 
-(4) More feature-rich or complex backtests are dealt with in the [continued Backtesting](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/backtesting/backtesting2.md) section.
+**(4)** More feature-rich or complex backtests are dealt with in the **[Advanced Backtesting](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/backtesting/backtesting2.md)** section.
 
-(5) This is continued in the [Advanced Heatmap](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/HeatmapTool/heatmap.md#advanced-optimization) optimization study.
+**(5)** This is continued in the **[Advanced Heatmap](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/HeatmapTool/heatmap.md#advanced-optimization)** optimization study.
 
-(6) Don't miss the chapter on [Risk Management](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/risk/risk.md) before you consider actually trading native tokens!
+**(6)** Don't miss the chapter on **[Risk Management](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/risk/risk.md)** before you consider actually trading native tokens!
 
-(7) Learn about data cleaning and outlier detection [here](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/tokens/cleanData.md).
+**(7)** Learn about **data cleaning and outlier detection** [here](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/tokens/cleanData.md).
 
-(8) Finally, download or ingest native tokens data using our [API](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/api/documentationAPI.md)
+**(8)** Finally, download or ingest native tokens data using our **[API](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/api/documentationAPI.md)**
 
-* Get in [touch](https://x.com/SapientSwarm), share [ideas](https://github.com/Sapient-Predictive-Analytics/dataportal/discussions), submit [feedback](https://forms.gle/H1fMqNMmyYhaVepV6), submit an [issue](https://github.com/Sapient-Predictive-Analytics/dataportal/issues), [reach out](https://www.sapientswarm.com/cardano.html).
+* **Get in [touch](https://x.com/SapientSwarm)**, share [ideas](https://github.com/Sapient-Predictive-Analytics/dataportal/discussions), submit [feedback](https://forms.gle/H1fMqNMmyYhaVepV6), submit an [issue](https://github.com/Sapient-Predictive-Analytics/dataportal/issues), [reach out](https://www.sapientswarm.com/cardano.html).
   
-* This website and repo are [NOT FINANCIAL ADVICE](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/disclaimer.md)!
+* This website and repo are **[NOT FINANCIAL ADVICE]**(https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/disclaimer.md)!
 
 ***
 
