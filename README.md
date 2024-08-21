@@ -119,3 +119,7 @@ def custom_log_scale(min_val, max_val):
 ***
 *Below is a [Heatmap](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/HeatmapTool/heatmap.md) for parameter-optimization and risk-tuning for a trading strategies with 2 degrees of freedom*
 ![heatmap2d](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/HeatmapTool/Heatmap2D.png)
+
+***
+Even complex strategies with many features can be optimized using the Heatmap feature with enough compute and the right plotting library.
+![Surfaces](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/HeatmapTool/Complex4Dheatmap.png)
