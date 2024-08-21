@@ -47,7 +47,9 @@ Please contact us or contribute to this repository if you have ideas, requests o
 
 **(7)** Learn about **data cleaning and outlier detection** [here](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/tokens/cleanData.md).
 
-**(8)** Finally, download or ingest native tokens data using our **[API](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/api/documentationAPI.md)**
+**(8)** To trade, discuss with likeminded people or test DEXes on Testnet, visit the [Community](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/community/community.md) section about trading venues, their communities and Dataportal collaboration
+
+**(9)** Finally, download or ingest native tokens data using our **[API](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/api/documentationAPI.md)**
 
 * **Get in [touch](https://x.com/SapientSwarm)**, share [ideas](https://github.com/Sapient-Predictive-Analytics/dataportal/discussions), submit [feedback](https://forms.gle/H1fMqNMmyYhaVepV6), submit an [issue](https://github.com/Sapient-Predictive-Analytics/dataportal/issues), [reach out](https://www.sapientswarm.com/cardano.html).
   
