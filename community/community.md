@@ -53,6 +53,7 @@ At the time of writing, there are a lot of trading venues from large to tiny, hi
 
 ## Shared signals, strategies and plots
 *Please use the Discussions feature that we added on Github*
+
 [Github Discussions](https://github.com/Sapient-Predictive-Analytics/dataportal/discussions)
 
 ## How to submit ideas and feedback
