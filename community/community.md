@@ -19,7 +19,7 @@ Most Cardano DEXes are organized as DAOs where native tokens held my members hav
 
 At the time of writing, there are a lot of trading venues from large to tiny, highly specialized ones. To our best knowledge, the majority of Cardano native token liquidity in utility and governance tokens is carried out on the following trading venues:
 
-[Minswap](https://minswap.org/)
+[Minswap](https://minswap.org/)[X](https://x.com/MinswapDEX)
 
 [Sundae](https://sundae.fi/)
 
