@@ -27,6 +27,7 @@ At the time of writing, there are a lot of trading venues from large to tiny, hi
 
 [WingRiders](https://www.wingriders.com/)
 [On X](https://x.com/wingriderscom)
+[Preprod Testnet V2](https://app.preprod.wingriders.com/)
 
 [MuesliSwap](https://muesliswap.com/)
 [On X](https://x.com/muesliswap?lang=en)
