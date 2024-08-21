@@ -51,10 +51,17 @@ At the time of writing, there are a lot of trading venues from large to tiny, hi
 
 
 ## Shared signals, strategies and plots
-
+*Please use the Discussions feature that we added on Github*
+[Github Discussions](https://github.com/Sapient-Predictive-Analytics/dataportal/discussions)
 
 ## How to submit ideas and feedback
 
-## How to use the API
+![Google](https://img.shields.io/badge/google-4285F4?style=for-the-badge&logo=google&logoColor=white)
+[Fill out the form](https://forms.gle/H1fMqNMmyYhaVepV6)
 
-## Social media
+![x](http://i.imgur.com/tXSoThF.png)
+[Or provide Feedback / Request feature on X](https://twitter.com/SapientSwarm)
+
+## How to use the API
+Please DM us or use Discussions for an API Key.
+[Documentation](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/api/documentationAPI.md)
