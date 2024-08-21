@@ -34,6 +34,7 @@ At the time of writing, there are a lot of trading venues from large to tiny, hi
 
 [Genius Yield](https://www.geniusyield.co/)
 [On X](https://x.com/geniusyieldo)
+[Strategy Executor Github](https://github.com/geniusyield/strategy-executor)
 
 [Splash](https://www.splash.trade/)
 [On X](https://x.com/splashprotocol)
