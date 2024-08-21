@@ -66,4 +66,7 @@ At the time of writing, there are a lot of trading venues from large to tiny, hi
 
 ## How to use the API
 Please DM us or use Discussions for an API Key.
+
+Convenience files for API call on your machine or handling ingesting requests can be found in the [API Section](https://github.com/Sapient-Predictive-Analytics/dataportal/tree/main/api).
+
 [Documentation](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/api/documentationAPI.md)
