@@ -1,6 +1,6 @@
 # Native Token Dataportal
 Public repository for Sapient's Cardano Native Tokens data portal.
-Fungible Tokens at launch: **AGIX**, **BOOK**, **COPI**, **EMP**, **FLDT**, **GENS**, **HUNT**, **IAG**, **INDY**, **LENFI**, **MELD**, **MIN**, **MILK**, **NEWM**, **NMKR**, **NTX**, **SNEK**, **SUNDAE**, **WMT**, **WRT**
+Fungible Tokens at launch: **AGIX**, **BOOK**, **COPI**, **EMP**, **FLDT**, **GENS**, **HUNT**, **IAG**, **INDY**, **LENFI**, **MELD**, **MILK**, **MIN**, **NEWM**, **NMKR**, **NTX**, **SNEK**, **SUNDAE**, **WMT**, **WRT**
 
 Our website and repository are constantly evolving and will launch in September as part of our [Catalyst Project](https://cardano.ideascale.com/c/idea/114247). New sections and updated data and charts are constantly being added and community feedback incorporated. A full tutorial, how-to-use flow and video will be provided upon launch, in the meantime you can find all section's information in their respective Markdown (.md) files with links to code, charts and data. Please also use the feedback form, Twitter or Github issues/discussion to get in touch, request API key, contribute content or request features or tickers. **Thank you and hope you enjoy the content!**
 
