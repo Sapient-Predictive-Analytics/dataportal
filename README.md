@@ -4,7 +4,7 @@ Fungible Tokens at launch: **AGIX**, **BOOK**, **COPI**, **EMP**, **FLDT**, **GE
 
 Our website and repository are constantly evolving and will launch in September as part of our [Catalyst Project](https://cardano.ideascale.com/c/idea/114247). New sections and updated data and charts are constantly being added and community feedback incorporated. A full tutorial, how-to-use flow and video will be provided upon launch, in the meantime you can find all section's information in their respective Markdown (.md) files with links to code, charts and data. Please also use the feedback form, Twitter or Github issues/discussion to get in touch, request API key, contribute content or request features or tickers. **Thank you and hope you enjoy the content!**
 
-![WMT Backtest](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/backtesting/WMT_SMA20_full_signals.png)
+![WMT Backtest](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/backtesting/WMT_SMA20_updated.png)
 
 
 *Simple SMA20 backtest for WMT token since first DEX listing used to showcase use of open source Python libraries and data API to build from simple trading strategies to more complex ones.*
