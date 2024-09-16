@@ -59,7 +59,10 @@ At the time of writing, there are a lot of trading venues from large to tiny, hi
 
 Some custom data has been uploaded there for you to play with, please share your own data if you have any :-)
 
-Santiment is a very popular metric in crypto trading, and lots of data exists, often behind a paywall. Sanbase does however provide a free 14-day trial and has a lot of [ADA-related](https://app.santiment.net/s/22z3d9EW) social, on-chain and trend metrics.
+Sentiment is a very popular metric in crypto trading, and lots of data exists, often behind a paywall. Santiment/Sanbase does however provide a free 14-day trial and has a lot of [ADA-related](https://app.santiment.net/s/22z3d9EW) social, on-chain and trend metrics.
+
+Another obvious source of alpha is Github, where the token's protocol developers can be traced for commits, pull requests, stars and so on. Such datasets are however hard to work with, and probably require backtesting across a lot of tokens to validate the findings.
+
 
 ## How to submit ideas and feedback
 
