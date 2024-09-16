@@ -57,6 +57,10 @@ At the time of writing, there are a lot of trading venues from large to tiny, hi
 
 [Github Discussions](https://github.com/Sapient-Predictive-Analytics/dataportal/discussions)
 
+Some custom data has been uploaded there for you to play with, please share your own data if you have any :-)
+
+Santiment is a very popular metric in crypto trading, and lots of data exists, often behind a paywall. Sanbase does however provide a free 14-day trial and has a lot of [ADA-related](https://app.santiment.net/s/22z3d9EW) social, on-chain and trend metrics.
+
 ## How to submit ideas and feedback
 
 ![Google](https://img.shields.io/badge/google-4285F4?style=for-the-badge&logo=google&logoColor=white)
