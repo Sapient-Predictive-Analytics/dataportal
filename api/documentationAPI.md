@@ -17,17 +17,17 @@ python3 api-call-script.py ticker.csv
 
 To get the last day's data: 
 ~~~
-python3 api_call-script.py ticker.csv day
+python3 api-call-script.py ticker.csv day
 ~~~
 
 To get the last 7 trading days' data: 
 ~~~
-python3 api_call-script.py ticker.csv week
+python3 api-call-script.py ticker.csv week
 ~~~
 
 To get the last 14 trading days' data: 
 ~~~
-python3 api_call-script.py ticker.csv fortnight
+python3 api-call-script.py ticker.csv fortnight
 ~~~
 
 This fortnight method is especially useful if you periodically update your signals manually, and achieves the same as print(df.tail(14)) in your local pandas environment but with our updated, cleaned cloud data.
