@@ -84,7 +84,7 @@ Download folder for interactive IPython notebook and time series data.
 ***
 ## How to use this repository and project
 
-[<img src="https://i.imgur.com/NiU8xcT.png" width="200" height="140" />](https://youtu.be/AIDbk8Iq5TM)
+[<img src="https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/HeatmapTool/Complex4Dheatmap.png" width="200" height="140" />](https://youtu.be/AIDbk8Iq5TM)
 
 ***
 ## Backtesting and Heatmap Tool
