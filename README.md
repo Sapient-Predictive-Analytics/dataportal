@@ -13,9 +13,14 @@ The Native Token Dataportal is now live with step-by-step introduction to open s
 ***
 ## Flow of the Dataportal and recommended reading
 
+*Optional: set up virtual environment to manage dependencies and keep separate from your own projects*
 ~~~
 python3 -m venv backtesting
 source backtesting/bin/activate
+~~~
+
+To use all the files of this repo in once place (recommended):
+~~~
 git clone https://github.com/Sapient-Predictive-Analytics/dataportal.git
 pip install requirements.txt
 ~~~
