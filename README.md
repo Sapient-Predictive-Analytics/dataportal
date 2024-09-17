@@ -14,10 +14,11 @@ The Native Token Dataportal is now live with step-by-step introduction to open s
 ## Flow of the Dataportal and recommended reading
 
 ~~~
+python3 -m venv backtesting
+source backtesting/bin/activate
 git clone https://github.com/Sapient-Predictive-Analytics/dataportal.git
+pip install requirements.txt
 ~~~
-
-*Required or recommended libraries are referenced in the relevant chapters for modularity. You can also refer to our [requirements.txt](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/backtesting/requirements.txt)*
 
 
 **(1)** If you are new to Python data analysis, backtesting, trading or native tokens please start with our simple **World Mobile Token [Casestudy](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/casestudy/overview.md).**
