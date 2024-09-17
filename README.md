@@ -2,7 +2,8 @@
 Public repository for Sapient's Cardano Native Tokens data portal.
 Fungible Tokens at launch: **AGIX**, **BOOK**, **COPI**, **EMP**, **FLDT**, **GENS**, **HUNT**, **IAG**, **INDY**, **LENFI**, **MELD**, **MILK**, **MIN**, **NEWM**, **NMKR**, **NTX**, **SNEK**, **SUNDAE**, **WMT**, **WRT**
 
-Our website and repository are constantly evolving and will launch in September as part of our [Catalyst Project](https://cardano.ideascale.com/c/idea/114247). New sections and updated data and charts are constantly being added and community feedback incorporated. A full tutorial, how-to-use flow and video will be provided upon launch, in the meantime you can find all section's information in their respective Markdown (.md) files with links to code, charts and data. Please also use the feedback form, Twitter or Github issues/discussion to get in touch, request API key, contribute content or request features or tickers. **Thank you and hope you enjoy the content!**
+The Native Token Dataportal is now live with step-by-step introduction to open source Python backtesting and plotting, strategy execution, risk management, clean token data and API. Please watch the video below how to get the most out of the service. There is also a landing website and feedback channels via X, Telegram and Google forms. We have opened Github Discussions and will deal with submitted issues and PRs prompty. Looking forward to your feedback and contribution!
+
 
 ![WMT Backtest](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/backtesting/WMT_SMA20_updated.png)
 
