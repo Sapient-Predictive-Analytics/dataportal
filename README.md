@@ -10,28 +10,7 @@ The Native Token Dataportal is now live with step-by-step introduction to open s
 
 *Simple SMA20 backtest for WMT token since first DEX listing used to showcase use of open source Python libraries and data API to build from simple trading strategies to more complex ones.*
 
-
 ***
-
-**Any feedback, request for new features, tickers, custom signals or plots can be submitted via our Google Form**
-
-![Google](https://img.shields.io/badge/google-4285F4?style=for-the-badge&logo=google&logoColor=white)
-[Fill out the form](https://forms.gle/H1fMqNMmyYhaVepV6)
-
-![x](http://i.imgur.com/tXSoThF.png)
-[Or provide Feedback / Request feature on X](https://twitter.com/SapientSwarm)
-
-***
-
-Please contact us or contribute to this repository if you have ideas, requests or directions how to grow quantitative trading and better market making and risk management for Cardano's native tokens investable assets universe.
-
-***
-[Notes on data formats, packages and utility](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/utility.md)
-
-[How the first 10 Native Tokens to be featured were chosen](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/rationale.md)
-
-***
-
 ## Flow of the Dataportal and recommended reading
 
 **(1)** If you are new to Python data analysis, backtesting, trading or native tokens please start with our simple **World Mobile Token [Casestudy](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/casestudy/overview.md).**
@@ -57,6 +36,27 @@ Please contact us or contribute to this repository if you have ideas, requests o
 * This website and repo are **[NOT FINANCIAL ADVICE]**(https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/disclaimer.md)!
 
 ***
+
+**Any feedback, request for new features, tickers, custom signals or plots can be submitted via our Google Form**
+
+![Google](https://img.shields.io/badge/google-4285F4?style=for-the-badge&logo=google&logoColor=white)
+[Fill out the form](https://forms.gle/H1fMqNMmyYhaVepV6)
+
+![x](http://i.imgur.com/tXSoThF.png)
+[Or provide Feedback / Request feature on X](https://twitter.com/SapientSwarm)
+
+***
+
+Please contact us or contribute to this repository if you have ideas, requests or directions how to grow quantitative trading and better market making and risk management for Cardano's native tokens investable assets universe.
+
+***
+[Notes on data formats, packages and utility](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/utility.md)
+
+[How the first 10 Native Tokens to be featured were chosen](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/rationale.md)
+
+***
+
+
 
 ## Casestudy Milestone 1
 Simple data manipulation on clean WMT (Minswap) data
