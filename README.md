@@ -59,10 +59,12 @@ Please contact us or contribute to this repository if you have ideas, requests o
 
 
 ## Casestudy to get started with Python Backtesting
+
+[How To](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/casestudy/overview.md)
 Simple data manipulation on clean WMT (Minswap) data
 
 [Download folder for interactive notebook](https://github.com/Sapient-Predictive-Analytics/dataportal/tree/main/casestudy)
-
+Download folder for interactive IPython notebook and time series data.
 
 ***
 ## How to use this repository and project
