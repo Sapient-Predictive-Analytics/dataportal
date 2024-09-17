@@ -58,7 +58,7 @@ Please contact us or contribute to this repository if you have ideas, requests o
 
 
 
-## Casestudy Milestone 1
+## Casestudy to get started with Python Backtesting
 Simple data manipulation on clean WMT (Minswap) data
 
 [Download folder for interactive notebook](https://github.com/Sapient-Predictive-Analytics/dataportal/tree/main/casestudy)
@@ -70,30 +70,9 @@ Simple data manipulation on clean WMT (Minswap) data
 [<img src="https://i.imgur.com/NiU8xcT.png" width="200" height="140" />](https://youtu.be/97e-LBkXwn4?si=V-zD0qgLHCa7VRZi)
 
 ***
-## Backtesting and Heatmap Tool Milestone 2
+## Backtesting and Heatmap Tool
 Introduction to backtesting concepts, the Zipline package, trading strategy design with heatmaps and use of Seaborn and other plotting libraries.
 New token prices have been added and charts, backtests and heatmap related files (images, code and notebooks) are added regularly.
-
-*IAGON is now on the Dataportal*
-
-![IAG Candles](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/tokens/IAG_candles_log.png)
-
-*SNEK is now on the Dataportal*
-
-![SNEK Candles](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/tokens/SNEK_candles.png)
-
-![SNEK](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/tokens/snek.png)
-
-*MIN is now on the Dataportal*
-
-![MIN Candles](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/tokens/MIN_candles_log.png)
-
-![MINv2](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/tokens/minv2.png)
-
-***
-## Video walkthrough of trading strategy design for native tokens
-
-[<img src="https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/HeatmapTool/NEW_ICON_SW.png" width="200" height="140" />](https://youtu.be/f6Z5DMaJmcw)
 
 ***
 
