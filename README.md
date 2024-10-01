@@ -5,7 +5,7 @@ Fungible Tokens at launch: **AGIX**, **BOOK**, **COPI**, **EMP**, **FLDT**, **GE
 The Native Token Dataportal is now live with step-by-step introduction to open source Python backtesting and plotting, strategy execution, risk management, clean token data and API. Please watch the video below how to get the most out of the service. There is also a landing website and feedback channels via X, Telegram and Google forms. We have opened Github Discussions and will deal with submitted issues and PRs prompty. Looking forward to your feedback and contribution!
 
 
-![WMT Backtest](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/backtesting/WMT_SMA20_updated.png)
+![WMT Backtest](https://github.com/Sapient-Predictive-Analytics/dataportal/blob/main/backtesting/WMT_SMA20_October1.png)
 
 
 *Simple SMA20 backtest for WMT token since first DEX listing used to showcase use of open source Python libraries and data API to build from simple trading strategies to more complex ones.*
