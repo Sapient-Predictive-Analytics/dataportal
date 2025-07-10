@@ -1,6 +1,6 @@
 # Native Token Dataportal
 Public repository for Sapient's Cardano Native Tokens data portal.
-Fungible Tokens at launch: **AGIX**, **BOOK**, **COPI**, **EMP**, **FLDT**, **GENS**, **HUNT**, **IAG**, **INDY**, **LENFI**, **MELD**, **MILK**, **MIN**, **NEWM**, **NMKR**, **NTX**, **SNEK**, **SUNDAE**, **WMT**, **WRT**
+Fungible Tokens at launch: **AGIX**, **BOOK** (now: STUFF), **COPI**, **EMP**, **FLDT**, **GENS**, **HUNT**, **IAG**, **INDY**, **LENFI**, **MELD**, **MILK**, **MIN**, **NEWM**, **NMKR**, **NTX**, **SNEK**, **SUNDAE**, **WMT**, **WRT**
 
 The Native Token Dataportal is now live with step-by-step introduction to open source Python backtesting and plotting, strategy execution, risk management, clean token data and API. Please watch the video below how to get the most out of the service. There is also a landing website and feedback channels via X, Telegram and Google forms. We have opened Github Discussions and will deal with submitted issues and PRs prompty. Looking forward to your feedback and contribution!
 
